@@ -1,4 +1,9 @@
-TST = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+MIR = {
+	color = rgb { 107 173 159 }
+	
 }
+BOF = {
+	color = rgb { 81 178 226 }
+}
+XIA = {
+	color = rgb { 199 219 85 }

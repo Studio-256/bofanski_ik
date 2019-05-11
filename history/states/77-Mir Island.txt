@@ -1,0 +1,26 @@
+state={
+	id=77
+	name="STATE_77"
+	manpower = 180000
+	
+	state_category = small_island
+
+	history={
+		owner = MIR
+		add_core_of = MIR
+		buildings = {
+			infrastructure = 3
+			1827 = {
+				naval_base = 1
+			}
+		}
+		
+		victory_points = {
+			6779 1 
+		}
+	}
+	
+	provinces={
+		1827 6779 6802 
+	}
+}

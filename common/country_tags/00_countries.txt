@@ -1,0 +1,3 @@
+MIR = "countries/Mir.txt"
+BOF = "countries/Bofan.txt"
+XIA = "countries/Ternfol-Siakia.txt"
