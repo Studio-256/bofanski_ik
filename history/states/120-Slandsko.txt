@@ -5,6 +5,18 @@ state={
 	provinces={
 		450 1255 1484 1643 1957 2005 2194 2211 2557 2881 3733 4256 4306 4382 4455 4851 5076 5091 5194 5264 5419 5473 6838 6843 6868 6906 6919 6930 6931 6932 6952 6964 7000 7016 7023 7026 7085 7102 7106 7625 
 	}
-	manpower=0
+	manpower=8280000
 	buildings_max_level_factor=1.000
+	state_category = large_city
+history={
+		owner = SLA
+		add_core_of = SLA
+		buildings = {
+			infrastructure = 8
+			factory = 5
+		}
+victory_points = {
+			7000 20
+		}
+		
 }

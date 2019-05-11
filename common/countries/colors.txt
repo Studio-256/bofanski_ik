@@ -7,3 +7,12 @@ BOF = {
 }
 XIA = {
 	color = rgb { 199 219 85 }
+}
+SLA = {
+	color = rgb { 90 142 68 }
+}
+SAS = {
+	color = rgb { 21 66 207 }
+{
+PIN = {
+	color = rgb { 237 27 36 }

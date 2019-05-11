@@ -1,0 +1,70 @@
+﻿capital = 70
+
+oob = "LIT_1936"
+
+set_research_slots = 3
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	early_fighter = 1
+}
+
+set_convoys = 10
+
+}
+
+set_politics = {
+
+	parties = {
+		autocracy = { 
+			popularity = 30
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		socialism = {
+			popularity = 15
+		}
+		
+		liberalism = { 
+			popularity = 50
+		}
+	}
+	
+	ruling_party = liberalism
+	last_election = "2014.8.31"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+
+}
+
+create_country_leader = {
+	name = "Ananas Smetanka"
+	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	expire = "2026.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Zhravoi Kritski"
+	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	expire = "2023.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
