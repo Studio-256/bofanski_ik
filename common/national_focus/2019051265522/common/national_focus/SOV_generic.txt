@@ -1,0 +1,1741 @@
+focus_tree = { 
+id = generic
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = SOV 
+} 
+} 
+#Focus for ideological_crisis
+focus = { 
+id = SOV_ideologicalcrisis
+icon = GFX_focus_generic_support_the_left_right
+x = 25
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for fidelity_to_bofan
+focus = { 
+id = SOV_fidelitytobofan
+icon = GFX_goal_support_democracy
+x = 25
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ideologicalcrisis } 
+mutually_exclusive = { focus = SOV_moveleft focus = SOV_moveright focus = SOV_ }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity= { 
+ideology = liberalism
+popularity = 0.1 
+}
+ } 
+
+ } 
+
+#Focus for move_left
+focus = { 
+id = SOV_moveleft
+icon = GFX_goal_support_communism
+x = 23
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ideologicalcrisis } 
+mutually_exclusive = { focus = SOV_moveright } 
+mutually_exclusive = { focus = SOV_fidelitytobofan } 
+completion_reward = { 
+add_political_power= 150
+ } 
+
+ } 
+
+#Focus for move_right
+focus = { 
+id = SOV_moveright
+icon = GFX_goal_support_fascism
+x = 27
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ideologicalcrisis } 
+mutually_exclusive = { focus = SOV_fidelitytobofan focus = SOV_moveleft focus = SOV_ }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 150
+ } 
+
+ } 
+
+#Focus for auth_left
+focus = { 
+id = SOV_authleft
+icon = GFX_focus_generic_join_comintern
+x = 19
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveleft } 
+mutually_exclusive = { focus = SOV_socialism focus = SOV_socdem }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = leftmilitarism 
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for Развитие армии - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_XOvNpmus
+icon = GFX_goal_generic_allies_build_infantry
+x = 1
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+army_experience = 5
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for socialism
+focus = { 
+id = SOV_socialism
+icon = GFX_focus_chi_mission_to_the_soviet_union
+x = 21
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveleft } 
+mutually_exclusive = { focus = SOV_authleft focus = SOV_socdem focus = SOV_ }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = socialism 
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for soc_dem
+focus = { 
+id = SOV_socdem
+icon = GFX_goal_tfv_burn_the_royal_portraits
+x = 23
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveleft } 
+mutually_exclusive = { focus = SOV_socialism } 
+mutually_exclusive = { focus = SOV_authleft } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = socdem 
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for liberate_once_again
+focus = { 
+id = SOV_liberateonceagain
+icon = GFX_goal_generic_improve_relations
+x = 25
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_fidelitytobofan } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 50
+add_popularity = { 
+ideology = liberalism 
+popularity = 0.3 
+}
+ } 
+
+ } 
+
+#Focus for conservatism
+focus = { 
+id = SOV_conservatism
+icon = GFX_goal_generic_national_unity
+x = 27
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveright } 
+mutually_exclusive = { focus = SOV_fascism } 
+mutually_exclusive = { focus = SOV_autocracy } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = conservatism
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for autocracy
+focus = { 
+id = SOV_autocracy
+icon = GFX_focus_usa_honor_the_confederacy
+x = 29
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveright } 
+mutually_exclusive = { focus = SOV_fascism focus = SOV_conservatism }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = autocracy 
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for fascism
+focus = { 
+id = SOV_fascism
+icon = GFX_goal_generic_secret_weapon
+x = 31
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_moveright } 
+mutually_exclusive = { focus = SOV_conservatism focus = SOV_autocracy }ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_political_party= { 
+ideology = fascism
+popularity = 0.5 
+}
+ } 
+
+ } 
+
+#Focus for Развитие снаряжения - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_zMsTRdDV
+icon = GFX_goal_generic_small_arms
+x = 0
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_XOvNpmus } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие транспорта - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_zuWAoIiX
+icon = GFX_goal_generic_army_motorized
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_XOvNpmus } 
+bypass = { 
+ has_tech = motorised_infantry 
+ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = motorized_bonus
+bonus = 3.0
+technology = motorised_infantry
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие доктрины - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_KlCJmxIS
+icon = GFX_goal_generic_army_doctrines
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_XOvNpmus } 
+completion_reward = { 
+
+army_experience = 5
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие снаряжения II
+focus = { 
+id = SOV_ii
+icon = GFX_goal_generic_army_artillery2
+x = 0
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_zMsTRdDV } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+bonus = 1.0
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие механизации - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_AJLjrCPS
+icon = GFX_goal_generic_build_tank
+x = 2
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_zuWAoIiX } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = motorized_bonus
+ahead_reduction = 2
+uses = 1
+category = motorized_equipment
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие доктрины II
+focus = { 
+id = SOV_OrUtHyRA
+icon = GFX_goal_generic_army_doctrines
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_KlCJmxIS } 
+completion_reward = { 
+
+army_experience = 5
+add_tech_bonus = {
+name = land_doc_bonus
+bonus = 1.0
+uses = 1
+category = land_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие снаряжения III
+focus = { 
+id = SOV_iii
+icon = GFX_goal_generic_army_artillery2
+x = 0
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ii } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = infantry_artillery_bonus
+ahead_reduction = 2
+uses = 1
+category = infantry_weapons
+category = artillery
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие бронетехники - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_IPKQdgby
+icon = GFX_goal_generic_army_tanks
+x = 2
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_AJLjrCPS } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 2
+category = armor
+}
+
+ } 
+
+ } 
+
+#Focus for Войска специального назначения - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_ApsIolFx
+icon = GFX_goal_generic_special_forces
+x = 1
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_iii } 
+prerequisite = { focus = SOV_OrUtHyRA } 
+prerequisite = { focus = SOV_IPKQdgby } 
+prerequisite = { focus = SOV_ } 
+completion_reward = { 
+
+add_ideas = special_forces
+add_tech_bonus = {
+name = special_forces_bonus
+bonus = 1.0
+uses = 1
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие авиации - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_tNgBHpWl
+icon = GFX_goal_generic_build_airforce
+x = 5
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+air_experience = 25
+
+if = {
+limit = {
+capital_scope = {
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_AB }
+}
+}
+if = {
+limit = {
+capital_scope = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_AB }
+}
+}
+add_tech_bonus = {
+name = air_doc_bonus
+bonus = 1.0
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Ставка на истребители - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_quWwbapt
+icon = GFX_goal_generic_air_fighter2
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_tNgBHpWl } 
+mutually_exclusive = { focus = SOV_PWeTBwkg } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fighter_bonus
+bonus = 1.0
+uses = 2
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+technology = heavy_fighter1
+technology = heavy_fighter2
+technology = heavy_fighter3
+}
+
+ } 
+
+ } 
+
+#Focus for Ставка на бомбардировщики - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_PWeTBwkg
+icon = GFX_goal_generic_air_bomber
+x = 6
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_tNgBHpWl } 
+mutually_exclusive = { focus = SOV_quWwbapt } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = bomber_bonus
+bonus = 1.0
+uses = 2
+technology = strategic_bomber1
+technology = strategic_bomber2
+technology = strategic_bomber3
+category = tactical_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие авиации II
+focus = { 
+id = SOV_UAJDZLEW
+icon = GFX_goal_generic_air_doctrine
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_PWeTBwkg focus = SOV_quWwbapt } 
+completion_reward = { 
+
+air_experience = 25
+if = {
+limit = {
+capital_scope = {
+OR = {
+NOT = { is_controlled_by = ROOT }
+NOT = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_2_AB }
+}
+}
+if = {
+limit = {
+capital_scope = {
+is_controlled_by = ROOT
+free_building_slots = {
+building = air_base
+size > 1
+}
+}
+}
+capital_scope = {
+add_building_construction = {
+type = air_base
+level = 2
+instant_build = yes
+}
+ROOT = { set_country_flag = aviation_effort_2_AB }
+}
+}
+add_tech_bonus = {
+name =  air_doc_bonus
+bonus = 1.0
+uses = 1
+category = air_doctrine
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие штурмовиков - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_fVWRmYMh
+icon = GFX_goal_generic_CAS
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_UAJDZLEW } 
+prerequisite = { focus = SOV_zuWAoIiX } 
+prerequisite = { focus = SOV_ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = CAS_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cas_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие ракет - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_ksXvDUla
+icon = GFX_focus_rocketry
+x = 5
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_UAJDZLEW } 
+prerequisite = { focus = SOV_FkiQljeR } 
+prerequisite = { focus = SOV_ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = jet_rocket_bonus
+ahead_reduction = 2
+uses = 2
+category = rocketry
+category = jet_technology
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие аэронавигации - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_rMdaoBfu
+icon = GFX_goal_generic_air_naval_bomber
+x = 6
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_UAJDZLEW } 
+prerequisite = { focus = SOV_DbQRaKSp } 
+prerequisite = { focus = SOV_ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = nav_bomber_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = naval_bomber
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие военно-морского флота - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_sBUZIzVu
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 9
+y = 0
+cost = 10
+available_if_capitulated = yes 
+available = { 
+
+any_state = {
+is_coastal = yes
+is_controlled_by = ROOT
+}
+
+ } 
+completion_reward = { 
+
+navy_experience = 25
+if = {
+limit = {
+NOT = {
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+any_owned_state = {
+is_coastal = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+is_coastal = yes
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = { has_country_flag = naval_effort_built }
+any_owned_state = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+random_owned_controlled_state = {
+limit = {
+dockyard > 0
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+set_country_flag = naval_effort_built
+}
+if = {
+limit = {
+NOT = { has_country_flag = naval_effort_built }
+NOT = {
+any_owned_state = {
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+}
+}
+random_state = {
+limit = {
+controller = { tag = ROOT }
+free_building_slots = {
+building = dockyard
+size > 2
+include_locked = yes
+}
+}
+add_extra_state_shared_building_slots = 3
+add_building_construction = {
+type = dockyard
+level = 3
+instant_build = yes
+}
+}
+}
+
+ } 
+
+ } 
+
+#Focus for ВМФ на основе многоцелевых судов - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_DbQRaKSp
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 7
+y = 0
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sBUZIzVu } 
+mutually_exclusive = { focus = SOV_ldeGhkjB } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = sub_op_bonus
+bonus = 1.0
+uses = 2
+technology = convoy_interdiction_ti
+technology = unrestricted_submarine_warfare
+technology = wolfpacks
+technology = advanced_submarine_warfare
+technology = combined_operations_raiding
+}
+
+ } 
+
+ } 
+
+#Focus for ВМФ на основе крупных судов - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_ldeGhkjB
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_sBUZIzVu } 
+mutually_exclusive = { focus = SOV_DbQRaKSp } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = fleet_in_being_bonus
+bonus = 1.0
+uses = 2
+category = fleet_in_being_tree
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие подводных лодок - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_OucfxSmZ
+icon = GFX_goal_generic_navy_submarine
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_DbQRaKSp focus = SOV_ldeGhkjB } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = ss_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = ss_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие крейсеров - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_YapkrLql
+icon = GFX_goal_generic_navy_cruiser
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ldeGhkjB focus = SOV_DbQRaKSp } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = cr_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = cl_tech
+category = ca_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие эсминцев - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_dNybzHUu
+icon = GFX_goal_generic_wolf_pack
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_OucfxSmZ } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = dd_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = dd_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие крупных кораблей - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_QklYRtCf
+icon = GFX_goal_generic_navy_battleship
+x = 9
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_YapkrLql } 
+completion_reward = { 
+
+navy_experience = 25
+add_tech_bonus = {
+name = capital_ships_bonus
+bonus = 1.0
+ahead_reduction = 2
+uses = 1
+category = bc_tech
+category = bb_tech
+category = cv_tech
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие промышленности - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_KkWSerAm
+icon = GFX_goal_generic_production
+x = 13
+y = 0
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+
+add_tech_bonus = {
+name = industrial_bonus
+bonus = 1.0
+uses = 1
+category = industry
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие строительства - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_uLJdPqOK
+icon = GFX_goal_generic_construct_civ_factory
+x = 14
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_KkWSerAm } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = industrial_complex
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие вооружений - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_PmrCvMwS
+icon = GFX_goal_generic_construct_mil_factory
+x = 11
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_KkWSerAm } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие строительства II
+focus = { 
+id = SOV_UoFwJYzB
+icon = GFX_goal_generic_construct_civ_factory
+x = 14
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_uLJdPqOK } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = industrial_complex
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие вооружений II
+focus = { 
+id = SOV_CsmbJIaG
+icon = GFX_goal_generic_construct_mil_factory
+x = 11
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_PmrCvMwS } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие инфраструктуры - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_FkiQljeR
+icon = GFX_goal_generic_construct_infrastructure
+x = 14
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_UoFwJYzB } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = infrastructure_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = infrastructure
+size < 1
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 1
+instant_build = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие вооружений III
+focus = { 
+id = SOV_RThOcIlf
+icon = GFX_goal_generic_construct_mil_factory
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_CsmbJIaG } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = production_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = arms_factory
+size < 1
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = arms_factory
+size > 0
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 1
+add_building_construction = {
+type = arms_factory
+level = 1
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие инфраструктуры II
+focus = { 
+id = SOV_hwbjfJRv
+icon = GFX_goal_generic_construct_infrastructure
+x = 12
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_FkiQljeR } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = infrastructure_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = infrastructure
+size < 1
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 0
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 1
+instant_build = yes
+}
+}
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = infrastructure
+size > 1
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_building_construction = {
+type = infrastructure
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие строительства III
+focus = { 
+id = SOV_XLxoluBD
+icon = GFX_goal_generic_construct_civ_factory
+x = 14
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_FkiQljeR } 
+bypass = { 
+
+custom_trigger_tooltip = {
+tooltip = construction_effort_tt
+all_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size < 2
+include_locked = yes
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+random_owned_controlled_state = {
+limit = {
+free_building_slots = {
+building = industrial_complex
+size > 1
+include_locked = yes
+}
+OR = {
+is_in_home_area = yes
+NOT = {
+owner = {
+any_owned_state = {
+free_building_slots = {
+building = industrial_complex
+size > 1
+include_locked = yes
+}
+is_in_home_area = yes
+}
+}
+}
+}
+}
+add_extra_state_shared_building_slots = 2
+add_building_construction = {
+type = industrial_complex
+level = 2
+instant_build = yes
+}
+}
+
+ } 
+
+ } 
+
+#Focus for Развитие атомной энергетики - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_DRALrvos
+icon = GFX_focus_wonderweapons
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_hwbjfJRv } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = nuclear_bonus
+ahead_reduction = 2
+category = nuclear
+}
+
+ } 
+
+ } 
+
+#Focus for Доп. ячейка для исследований - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_ywBQRTra
+icon = GFX_focus_research2
+x = 12
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_hwbjfJRv } 
+completion_reward = { 
+
+add_research_slot = 1
+
+ } 
+
+ } 
+
+#Focus for Доп. ячейка для исследований II
+focus = { 
+id = SOV_WnKrXkie
+icon = GFX_focus_research2
+x = 12
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_ywBQRTra } 
+available = { 
+
+num_of_factories > 50
+
+ } 
+completion_reward = { 
+
+add_research_slot = 1
+
+ } 
+
+ } 
+
+#Focus for Секретное оружие - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_OifStJvD
+icon = GFX_goal_generic_secret_weapon
+x = 14
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_hwbjfJRv } 
+completion_reward = { 
+
+add_tech_bonus = {
+name = secret_bonus
+bonus = 1.0
+uses = 4
+category = electronics
+category = nuclear
+category = rocketry
+}
+
+ } 
+
+ } 
+
+#Focus for Дух коллективизма - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_GiIeWFsR
+icon = GFX_goal_generic_national_unity
+x = 22
+y = 4
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Ставка на национализм - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_GLhPJdUZ
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 19
+y = 3
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Ставка на интернационализм - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_CZuQTHMO
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 24
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_GiIeWFsR } 
+mutually_exclusive = { focus = SOV_GLhPJdUZ } 
+available = { 
+
+if = {
+limit = { original_tag = CHI }
+has_government = communism
+else = {
+OR = {
+has_government = communism
+has_government = neutrality
+}
+}
+}
+
+ } 
+completion_reward = { 
+
+add_timed_idea = {
+idea = internationalism
+days = 720
+}
+
+ } 
+
+ } 
+
+#Focus for Дух свободы - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_FnAxZYhl
+icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+x = 21
+y = 3
+cost = 10
+available_if_capitulated = yes 
+
+ } 
+
+#Focus for Ставка на нейтралитет - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_EIerkbKa
+icon = GFX_goal_generic_neutrality_focus
+x = 26
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_FnAxZYhl } 
+mutually_exclusive = { focus = SOV_MxiAvfmj } 
+completion_reward = { 
+
+if = {
+limit = { NOT = { has_idea = neutrality_idea } }
+add_ideas = neutrality_idea
+}
+add_political_power = 150
+
+ } 
+
+ } 
+
+#Focus for Ставка на интервенционизм - focus ID randomly generated due to title being in non-latin characters
+focus = { 
+id = SOV_MxiAvfmj
+icon = GFX_goal_generic_political_pressure
+x = 20
+y = 4
+cost = 10
+available_if_capitulated = yes 
+completion_reward = { 
+if = {
+limit = { has_idea = neutrality_idea }
+remove_ideas = neutrality_idea
+}
+set_rule = { can_send_volunteers = yes }
+add_political_power = 150
+ } 
+
+ } 
+
+#End of focuses 
+ }
