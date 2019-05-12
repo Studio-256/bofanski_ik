@@ -3,7 +3,7 @@ state={
 	name="STATE_77"
 	manpower = 180000
 	
-	state_category = small_island
+	state_category = town
 
 	history={
 		owner = MIR
@@ -12,6 +12,8 @@ state={
 			infrastructure = 3
 			1827 = {
 				naval_base = 1
+				arms_factory = 1
+				industrial_complex = 1
 			}
 		}
 		
