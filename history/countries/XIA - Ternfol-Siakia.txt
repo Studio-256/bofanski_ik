@@ -128,4 +128,14 @@ create_country_leader = {
 		exiled # He left in 1933 so he should still be exiled
 	}
 }
+create_country_leader = {
+	name = "Council of Panland"
+	desc = "POLITICS_PANLAND_COUNCIL_DESC"	 
+	picture = "gfx/leaders/Portrait_XIA_PanlandCouncil.dds"
+	expire = "2032.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
 
