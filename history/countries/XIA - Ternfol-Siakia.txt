@@ -138,4 +138,14 @@ create_country_leader = {
 		
 	}
 }
+create_country_leader = {
+	name = "Augusta Sikorska"
+	desc = "POLITICS_AUGUSTA_SIKORSKA_DESC"	 
+	picture = "gfx/leaders/Portrait_XIA_Augusta_Sikorska.dds"
+	expire = "2032.1.1"
+	ideology = socdem
+	traits = {
+		
+	}
+}
 
