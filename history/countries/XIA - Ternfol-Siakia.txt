@@ -143,9 +143,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "Augusta Sikorska"
 	desc = "POLITICS_AUGUSTA_SIKORSKA_DESC"	 
-	picture = "gfx/leaders/Portrait_XIA_Augusta_Sikorska.dds"
+	picture = "gfx/leaders/Portrait_Argentina_Fanny_Jabcovsky.dds"
 	expire = "2032.1.1"
-	ideology = socdem
+	ideology = socialdemocracy
 	traits = {
 		
 	}
