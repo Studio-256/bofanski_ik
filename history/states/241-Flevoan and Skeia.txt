@@ -1,0 +1,24 @@
+
+state={
+	id=241
+	name="STATE_241"
+	provinces={
+		797 882 3058 3290 3390 3613 4522 4894 5344 5820 7232 7286 7296 7311 7327 7348 
+	}
+	manpower=1342290
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	history={
+		owner = XIA
+		victory_points = {
+			5344 5
+		}
+	
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		add_core_of = XIA
+	}	
+}

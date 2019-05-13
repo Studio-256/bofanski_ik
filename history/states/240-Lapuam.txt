@@ -1,0 +1,26 @@
+
+state={
+	id=240
+	name="STATE_240"
+	provinces={
+		1011 2147 3378 4009 4611 5595 7216 7259 7292 
+	}
+	state_category=town
+	manpower=900291
+	buildings_max_level_factor=1.000
+	history={
+		owner = XIA
+		victory_points = {
+			2147 5
+		}
+		victory_points = {
+			7216 5
+		}		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = XIA
+	}
+}

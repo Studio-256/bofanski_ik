@@ -19,7 +19,17 @@ bookmarks = {
 			}	
 		}
 		"BOF"={
-			history = "MIR_GATHERING_STORM_DESC"
+			history = "BOF_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"XIA"={
+			history = "XIA_GATHERING_STORM_DESC"
 			ideology = liberalism
 			ideas = {
 				
