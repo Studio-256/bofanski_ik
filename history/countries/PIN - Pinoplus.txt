@@ -4,9 +4,6 @@ oob = "PIN_1936"
 
 set_research_slots = 3
 
-add_ideas = {
-	limited_conscription
-}
 
 set_technology = {
 	infantry_weapons = 1
@@ -16,7 +13,6 @@ set_technology = {
 
 set_convoys = 10
 
-}
 
 set_politics = {
 
@@ -41,18 +37,64 @@ set_politics = {
 	ruling_party = liberalism
 	last_election = "2014.8.31"
 	election_frequency = 72
-	elections_allowed = no
+	elections_allowed = yes
 }
 
-
+add_ideas = {
+	volunteer_only
+	civilian_economy
 }
 
 create_country_leader = {
-	name = "Ananas Smetanka"
-	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "GFX_Portrait_lithuania_antanas_smetona"
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
 	expire = "2026.1.1"
 	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wise Leader Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "GFX_Portrait_PIN_Governor2.dds"
+	expire = "2026.1.1"
+	ideology = autocracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Pure Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "GFX_Portrait_PIN_Governor2.dds"
+	expire = "2026.1.1"
+	ideology = fascism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Gensec Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "GFX_Portrait_PIN_Governor2.dds"
+	expire = "2026.1.1"
+	ideology = leftmilitarism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Businessman Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "GFX_Portrait_PIN_Governor2.dds"
+	expire = "2026.1.1"
+	ideology = egoism
 	traits = {
 		#
 	}
@@ -68,3 +110,16 @@ create_country_leader = {
 		#
 	}
 }
+
+create_country_leader = {
+	name = "Monk Onanius"
+	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Monk.dds"
+	expire = "2023.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+

@@ -38,6 +38,11 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	volunteer_only
+	civilian_economy
+}
+
 #Start Horty as neutral if DOD
 
 create_country_leader = {

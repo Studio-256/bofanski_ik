@@ -34,16 +34,17 @@ set_politics = {
 }
 
 
-add_ideas = {	
-	limited_conscription
+add_ideas = {
+	volunteer_only
+	civilian_economy
 }
 
 set_stability = 0.85
 
 create_country_leader = {
 	name = "Mir Common"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
+	desc = "POLITICS_MIR_COUNCIL_DESC"
+	picture = "Portrait_MIR_Council.dds"
 	expire = "2065.1.1"
 	ideology = socialdemocracy
 	traits = {

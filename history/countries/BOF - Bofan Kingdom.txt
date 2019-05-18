@@ -61,14 +61,15 @@ set_politics = {
 	}
 		
 	ruling_party = liberalism
-	last_election = "2014.8.1"
+	last_election = "2014.8.31"
 	election_frequency = 72
 	elections_allowed = yes
 	
 }
 
 add_ideas = {
-
+	volunteer_only
+	civilian_economy
 }
 
 
@@ -105,6 +106,4 @@ create_country_leader = {
 	traits = {
 		
 	}
-}
-
 }

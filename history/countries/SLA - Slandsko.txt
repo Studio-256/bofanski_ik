@@ -47,6 +47,11 @@ set_politics = {
 	elections_allowed = yes
 }
 
+add_ideas = {
+	volunteer_only
+	civilian_economy
+}
+
 create_country_leader = {
 	name = "Liubomir Szudakef"
 	desc = "POLITICS_EDVARD_BENES_DESC"
