@@ -1,11 +1,14 @@
 focus_tree = { 
 id = generic_focus
 country = { 
-factor = 1  
-} 
+factor = 0 
+modifier = { 
+add = 10 
+tag =  
+}
 default = yes
-	reset_on_civilwar = no
-} 
+reset_on_civilwar = no
+}
 #Focus for ideological_crisis
 focus = { 
 id = _ideologicalcrisis
