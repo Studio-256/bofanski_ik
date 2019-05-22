@@ -13,6 +13,7 @@ SLA = {
 }
 SAS = {
 	color = rgb { 21 66 207 }
-{
+}
 PIN = {
 	color = rgb { 237 27 36 }
+}

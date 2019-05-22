@@ -12,9 +12,7 @@ state={
 		add_core_of = BOF
 		buildings = {
 			infrastructure = 3
-			1827 = {
-				factory = 1
-			}
+
 		}
 		
 		victory_points = {

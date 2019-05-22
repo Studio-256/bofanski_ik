@@ -10,11 +10,7 @@ state={
 		add_core_of = MIR
 		buildings = {
 			infrastructure = 3
-			1827 = {
-				naval_base = 1
-				arms_factory = 1
-				industrial_complex = 1
-			}
+			
 		}
 		
 		victory_points = {

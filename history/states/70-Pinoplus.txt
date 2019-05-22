@@ -9,9 +9,7 @@ history={
 		add_core_of = PIN
 		buildings = {
 			infrastructure = 6
-			67 = {
-				factory = 1
-			}
+			
 		}
 		
 		victory_points = {

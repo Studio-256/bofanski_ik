@@ -17,8 +17,7 @@ state={
 	
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 2
-			arms_factory = 3
+
 		}
 		add_core_of = XIA
 	}
