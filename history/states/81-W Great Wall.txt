@@ -1,0 +1,16 @@
+state={
+	id=81
+	name="STATE_81"
+	provinces={
+		655 
+	}
+	history={
+		owner = BOF
+		add_core_of = BOF
+		
+
+	}
+	state_category = enclave
+	manpower=13982
+	buildings_max_level_factor=1.000
+}

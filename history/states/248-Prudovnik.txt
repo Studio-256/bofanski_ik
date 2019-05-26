@@ -1,0 +1,16 @@
+
+state={
+	id=248
+	name="STATE_248"
+	provinces={
+		2194 3733 4306 4455 6868 6906 6919 6931 
+	}
+		history={
+		owner = SLA
+		add_core_of = SLA
+		
+	}
+	state_category = town
+	manpower=945683
+	buildings_max_level_factor=1.000
+}

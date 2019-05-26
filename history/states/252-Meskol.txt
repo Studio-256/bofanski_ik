@@ -1,0 +1,15 @@
+state={
+	id=252
+	name="STATE_252"
+	provinces={
+		1253 1393 2125 2130 4120 7122 
+	}
+		history={
+		owner = SAS
+		add_core_of = SAS
+		
+	}
+	state_category = large_town
+	manpower=1495003
+	buildings_max_level_factor=1.000
+}

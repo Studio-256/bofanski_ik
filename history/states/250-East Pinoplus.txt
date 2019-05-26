@@ -1,0 +1,17 @@
+
+state={
+	id=250
+	name="STATE_250"
+	provinces={
+		1031 3010 4469 5549 6730 6769 6814 
+	}
+	history={
+		owner = PIN
+		add_core_of = PIN
+		
+
+	}
+	state_category = city
+	manpower=1247900
+	buildings_max_level_factor=1.000
+}

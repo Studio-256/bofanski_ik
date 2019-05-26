@@ -1,0 +1,16 @@
+
+state={
+	id=245
+	name="STATE_245"
+	provinces={
+		1255 1957 5194 5264 6838 6843 6964 
+	}
+	history={
+		owner = SLA
+		add_core_of = SLA
+		
+	}
+	state_category = pastoral
+	manpower=253100
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,17 @@
+
+state={
+	id=249
+	name="STATE_249"
+	provinces={
+		67 1890 5980 6799 6850 6865 
+	}
+	history={
+		owner = PIN
+		add_core_of = PIN
+		
+
+	}
+	state_category = rural
+	manpower=290568
+	buildings_max_level_factor=1.000
+}

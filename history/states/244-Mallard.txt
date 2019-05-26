@@ -1,0 +1,20 @@
+
+state={
+	id=244
+	name="STATE_244"
+	provinces={
+		2005 5091 7016 
+	}
+	history={
+		owner = SLA
+		add_core_of = SLA
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+	state_category = rural
+	manpower=56743
+	buildings_max_level_factor=1.000
+}

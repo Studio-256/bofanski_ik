@@ -1,22 +1,25 @@
+
 state={
 	id=70
 	name="STATE_70"
-	provinces={
-		67 1031 1073 1890 1944 2057 2956 3010 3375 3539 4469 5549 5980 6730 6749 6754 6769 6778 6799 6814 6850 6865 
-	}
-history={
+
+	history={
 		owner = PIN
 		add_core_of = PIN
 		buildings = {
 			infrastructure = 6
-			
+
 		}
-		
 		victory_points = {
 			6778 20 
 		}
-	}	
-	manpower=3021930
+
+	}
+
+	provinces={
+		1073 1944 2057 2956 3375 3539 6749 6754 6778 
+	}
+	manpower=1353670
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

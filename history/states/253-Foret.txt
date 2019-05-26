@@ -1,0 +1,15 @@
+state={
+	id=253
+	name="STATE_253"
+	provinces={
+		1241 1534 6053 6942 6957 6980 7005 
+	}
+		history={
+		owner = SAS
+		add_core_of = SAS
+		
+	}
+	state_category = pastoral
+	manpower=194083
+	buildings_max_level_factor=1.000
+}

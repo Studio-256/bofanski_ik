@@ -1,23 +1,24 @@
-
 state={
 	id=83
 	name="STATE_83"
-	provinces={
-		9 276 1241 1253 1308 1393 1534 2125 2130 2314 3452 3519 3649 4012 4120 5041 5531 6053 6151 6895 6898 6925 6926 6942 6951 6957 6973 6980 6999 7005 7025 7037 7105 7122 
-	}
-	manpower=5022000
-	state_category = large_city
-	buildings_max_level_factor=1.000
-history={
+
+	history={
 		owner = SAS
 		add_core_of = SAS
 		buildings = {
 			infrastructure = 3
-			
+
 		}
-		
 		victory_points = {
 			9 20 
 		}
+
 	}
+
+	provinces={
+		9 276 6151 6925 6973 7025 
+	}
+	manpower=1705900
+	buildings_max_level_factor=1.000
+	state_category=large_city
 }
