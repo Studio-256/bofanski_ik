@@ -1,0 +1,39 @@
+﻿add_namespace = news
+
+# Ideologischekrieze
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = {
+		text = news.1.d
+		
+	}
+	
+	picture = GFX_news_ik
+	
+	major = yes
+	
+	trigger = {
+		date > 2014.9.2
+		
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = news.1.a
+		trigger = { 
+			NOT = { TAG = BOF }
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = { TAG = BOF }
+	}
+}

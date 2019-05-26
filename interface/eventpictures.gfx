@@ -1,0 +1,10 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_ik"
+		texturefile = "gfx/event_pictures/news_ik.dds"
+	}
+
+
+
+}

@@ -15,8 +15,8 @@ history={
 		victory_points = {
 			6778 20 
 		}
+	}	
 	manpower=3021930
 	buildings_max_level_factor=1.000
 	state_category=large_city
-	}
 }

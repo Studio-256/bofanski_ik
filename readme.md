@@ -1,4 +1,4 @@
-Current version 0.0.5-pre2 (YET NOT ALPHA/NON-PUBLIC VERSION)  
+Current version 0.0.5-pre3 (YET NOT ALPHA/NON-PUBLIC VERSION)  
 
 GIT CHANGELOG 
 
