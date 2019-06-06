@@ -12,6 +12,7 @@ news_event = {
 	picture = GFX_news_ik
 	
 	major = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		date > 2014.9.2
