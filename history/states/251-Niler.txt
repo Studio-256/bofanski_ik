@@ -8,6 +8,11 @@ state={
 	history={
 		owner = SAS
 		add_core_of = SAS
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+
+		}
 		
 	}
 	state_category = large_town

@@ -16,10 +16,12 @@ state={
 		owner = XIA
 		victory_points = {
 			2025 5
+			7503 5
 		}
 	
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
 		}
 		add_core_of = XIA
 	}
