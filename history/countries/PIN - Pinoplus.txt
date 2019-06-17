@@ -22,11 +22,11 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 15
+			popularity = 10
 		}
 		
 		socialism = {
-			popularity = 15
+			popularity = 10
 		}
 		
 		liberalism = { 
