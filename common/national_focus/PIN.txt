@@ -1,233 +1,668 @@
 focus_tree = { 
-id = generic_focus
+id = pinoplus_focus
 country = { 
-factor = 1}
+factor = 0 
+modifier = { 
+add = 10 
+tag =  PIN
+}
+}
+default = no
 
-default = yes
-reset_on_civilwar = no
 
 #Focus for ideological_crisis
 focus = { 
-id = _ideologicalcrisis
+id = PIN_ideologicalcrisis
 icon = GFX_focus_generic_support_the_left_right
-x = 25
+x = 35
 y = 0
 cost = 10
 available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_political_power= 150
+}
+}
 
- } 
-
-#Focus for fidelity_to_bofan
+#Focus for re-election of parlament
 focus = { 
-id = _fidelitytobofan
-icon = GFX_goal_support_democracy
-x = 25
+id = PIN_parlament
+icon = GFX_focus_usa_voter_registration_act
+x = 23
 y = 1
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _ideologicalcrisis } 
-mutually_exclusive = { focus = _moveleft focus = _moveright focus = _ }ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_ideologicalcrisis } 
+mutually_exclusive = { focus = PIN_purgetheparlament}
 completion_reward = { 
-add_popularity= { 
-ideology = liberalism
-popularity = 0.1 
+kill_country_leader = yes
+set_party_name = { ideology = liberalism name = PIN_parlamentname }
 }
- } 
+add_ideas = {
+	elections_al}
+} 
 
- } 
 
-#Focus for move_left
+#Focus for purging of parliament
 focus = { 
-id = _moveleft
+id = PIN_purgetheparlament 
+icon = GFX_focus_eng_concessions_to_the_trade_unions
+x = 39
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_ideologicalcrisis } 
+mutually_exclusive = { focus = PIN_parlament } 
+completion_reward = { 
+set_politics = {
+ruling_party = liberalism
+elections_allowed = no
+}
+remove_ideas = elections_al
+ } 
+ } 
+ 
+#Focus for left-wing election
+focus = { 
+id = PIN_left
 icon = GFX_goal_support_communism
-x = 23
-y = 1
+x = 20
+y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _ideologicalcrisis } 
-mutually_exclusive = { focus = _moveright } 
-mutually_exclusive = { focus = _fidelitytobofan } 
+prerequisite = { focus = PIN_parlament } 
+mutually_exclusive = { focus = PIN_center } 
+mutually_exclusive = { focus = PIN_right } 
 completion_reward = { 
-add_political_power= 150
- } 
-
- } 
-
-#Focus for move_right
+OVERLORD = {
+				set_autonomy = {
+					target = PIN
+					autonomy_state = autonomy_free
+				}
+			}
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = liberalism
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+}
+add_popularity = {
+ideology = leftmilitarism
+popularity = 0.15
+}
+add_popularity = {
+ideology = socialism
+popularity = 0.15
+}
+add_popularity = {
+ideology = egalitarism
+popularity = 0.15
+}
+set_party_name = { ideology = liberalism name = PIN_liberalism_party }
+set_party_name = { ideology = socialism name = PIN_parlamentname }
+start_civil_war = {
+				ideology = liberalism
+				size = 0.7
+			}
+set_politics = {
+ruling_party = socialism
+elections_allowed = yes
+}
+add_ideas = {
+	elections_al}
+}
+ }  
+ 
+#Focus for centrist election
 focus = { 
-id = _moveright
+id = PIN_center
+icon = GFX_goal_support_democracy
+x = 26
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_parlament } 
+mutually_exclusive = { focus = PIN_left } 
+mutually_exclusive = { focus = PIN_right } 
+completion_reward = { 
+OVERLORD = {
+				set_autonomy = {
+					target = PIN
+					autonomy_state = autonomy_free
+				}
+			}
+add_popularity = {
+ideology = socdem
+popularity = 0.15
+}
+add_popularity = {
+ideology = liberalism
+popularity = 0.15
+}
+add_popularity = {
+ideology = conservatism
+popularity = 0.15
+}
+ } 
+ } 
+ 
+#Focus for right-wing election
+focus = { 
+id = PIN_right
 icon = GFX_goal_support_fascism
-x = 27
-y = 1
+x = 32
+y = 2
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _ideologicalcrisis } 
-mutually_exclusive = { focus = _fidelitytobofan focus = _moveleft focus = _ }ai_will_do = { 
- factor = 1
+prerequisite = { focus = PIN_parlament } 
+mutually_exclusive = { focus = PIN_center } 
+mutually_exclusive = { focus = PIN_left } 
+completion_reward = { 
+OVERLORD = {
+				set_autonomy = {
+					target = PIN
+					autonomy_state = autonomy_free
+				}
+			}
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = liberalism
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+}
+add_popularity = {
+ideology = fascism
+popularity = 0.15
+}
+add_popularity = {
+ideology = autocracy
+popularity = 0.15
+}
+add_popularity = {
+ideology = egoism 
+popularity = 0.15
+}
+set_party_name = { ideology = liberalism name = PIN_liberalism_party }
+set_party_name = { ideology = autocracy name = PIN_parlamentname }
+start_civil_war = {
+				ideology = liberalism
+				size = 0.7
+			}
+set_politics = {
+ruling_party = autocracy
+elections_allowed = yes
+}
+add_ideas = {
+	elections_al}
  } 
+ } 
+
+#Focus for rapprochement with Bofan
+focus = { 
+id = PIN_Bofan
+icon = GFX_goal_continuous_suppression
+x = 37
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_purgetheparlament } 
+mutually_exclusive = { focus = PIN_independent } 
 completion_reward = { 
 add_political_power= 150
  } 
-
  } 
-
-#Focus for auth_left
+ 
+#Focus for independent from Bofan
 focus = { 
-id = _authleft
+id = PIN_independent
+icon = GFX_focus_eng_decolonization
+x = 43
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_purgetheparlament } 
+mutually_exclusive = { focus = PIN_Bofan } 
+completion_reward = { 
+OVERLORD = {
+				set_autonomy = {
+					target = PIN
+					autonomy_state = autonomy_free
+				}
+			}
+ } 
+ }
+ 
+#Focus for leftmilitarism without Kozlodoev
+focus = { 
+id = PIN_al
 icon = GFX_focus_generic_join_comintern
-x = 19
-y = 2
+x = 18
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _moveleft } 
-mutually_exclusive = { focus = _socialism focus = _socdem }ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_left } 
+mutually_exclusive = { focus = PIN_soc } 
+mutually_exclusive = { focus = PIN_egal } 
 completion_reward = { 
-set_political_party= { 
-ideology = leftmilitarism 
-popularity = 0.5 
+add_popularity = {
+ideology = leftmilitarism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = leftmilitarism
+elections_allowed = no
+}
+remove_ideas = elections_al
+set_party_name = { ideology = leftmilitarism name = PIN_alname }
+}
+ } 
+ 
+ 
+#Focus for socialist
+focus = { 
+id = PIN_soc
+icon = GFX_focus_eng_liberate_the_home_of_marx
+x = 20
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_left } 
+mutually_exclusive = { focus = PIN_al } 
+mutually_exclusive = { focus = PIN_egal } 
+completion_reward = { 
+add_popularity = {
+ideology = socialism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = socialism
+elections_allowed = yes
+}
+set_party_name = { ideology = socialism name = PIN_socname }
 }
  } 
 
- } 
-
-
-#Focus for socialism
+ 
+#Focus for egalitarists
 focus = { 
-id = _socialism
-icon = GFX_focus_chi_mission_to_the_iet_union
-x = 21
-y = 2
+id = PIN_egal
+icon = GFX_focus_prc_agrarian_socialism
+x = 22
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _moveleft } 
-mutually_exclusive = { focus = _authleft focus = _socdem focus = _ }ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_left } 
+mutually_exclusive = { focus = PIN_al } 
+mutually_exclusive = { focus = PIN_soc } 
 completion_reward = { 
-set_political_party= { 
-ideology = socialism 
-popularity = 0.5 
+add_popularity = {
+ideology = egalitarism
+popularity = 0.4
 }
+set_politics = {
+ruling_party = egalitarism
+elections_allowed = yes
+}
+set_party_name = { ideology = egalitarism name = PIN_egalname }
  } 
-
  } 
-
-#Focus for soc_dem
+ 
+#Focus for social-democrats
 focus = { 
-id = _socdem
-icon = GFX_goal_tfv_burn_the_royal_portraits
-x = 23
-y = 2
+id = PIN_socdem
+icon = GFX_focus_prc_social_democracy
+x = 24
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _moveleft } 
-mutually_exclusive = { focus = _socialism } 
-mutually_exclusive = { focus = _authleft } 
-ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_center } 
+mutually_exclusive = { focus = PIN_lib } 
+mutually_exclusive = { focus = PIN_cons } 
 completion_reward = { 
-set_political_party= { 
-ideology = socdem 
-popularity = 0.5 
+add_popularity = {
+ideology = socdem
+popularity = 0.4
 }
+set_politics = {
+ruling_party = socdem
+elections_allowed = yes
+}
+set_party_name = { ideology = socdem name = PIN_socdemname }
  } 
-
  } 
-
-#Focus for liberate_once_again
+ 
+#Focus for liberalism without Kozlodoev
 focus = { 
-id = _liberateonceagain
+id = PIN_lib
 icon = GFX_goal_generic_improve_relations
-x = 25
-y = 2
+x = 26
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _fidelitytobofan } 
-ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_center } 
+mutually_exclusive = { focus = PIN_socdem } 
+mutually_exclusive = { focus = PIN_cons } 
 completion_reward = { 
-add_political_power= 50
-add_popularity = { 
-ideology = liberalism 
-popularity = 0.3 
+add_popularity = {
+ideology = liberalism
+popularity = 0.4
 }
+set_politics = {
+ruling_party = liberalism
+elections_allowed = yes
+}
+set_party_name = { ideology = liberalism name = PIN_liberalismname }
  } 
-
  } 
-
+ 
 #Focus for conservatism
 focus = { 
-id = _conservatism
-icon = GFX_goal_generic_national_unity
-x = 27
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = _moveright } 
-mutually_exclusive = { focus = _fascism } 
-mutually_exclusive = { focus = _autocracy } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-set_political_party= { 
-ideology = conservatism
-popularity = 0.5 
-}
- } 
-
- } 
-
-#Focus for autocracy
-focus = { 
-id = _autocracy
+id = PIN_cons
 icon = GFX_focus_usa_honor_the_confederacy
-x = 29
-y = 2
+x = 28
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _moveright } 
-mutually_exclusive = { focus = _fascism focus = _conservatism }ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_center } 
+mutually_exclusive = { focus = PIN_socdem } 
+mutually_exclusive = { focus = PIN_lib } 
 completion_reward = { 
-set_political_party= { 
-ideology = autocracy 
-popularity = 0.5 
+add_popularity = {
+ideology = conservatism
+popularity = 0.4
 }
+set_politics = {
+ruling_party = conservatism
+elections_allowed = yes
+}
+set_party_name = { ideology = conservatism name = PIN_conservatismname }
  } 
-
  } 
-
-#Focus for fascism
+ 
+#Focus for fascism without Kozlodoev
 focus = { 
-id = _fascism
+id = PIN_fas
 icon = GFX_goal_generic_secret_weapon
-x = 31
-y = 2
+x = 30
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = _moveright } 
-mutually_exclusive = { focus = _conservatism focus = _autocracy }ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = PIN_right } 
+mutually_exclusive = { focus = PIN_aut } 
+mutually_exclusive = { focus = PIN_ego } 
 completion_reward = { 
-set_political_party= { 
+add_popularity = {
 ideology = fascism
-popularity = 0.5 
+popularity = 0.4
 }
+set_politics = {
+ruling_party = fascism
+elections_allowed = no
+}
+remove_ideas = elections_al
+set_party_name = { ideology = fascism name = PIN_fascismname }
+ } 
+ } 
+  
+
+#Focus for autocracy without Kozlodoev
+focus = { 
+id = PIN_aut
+icon = GFX_focus_mex_restore_the_army_of_christ
+x = 32
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_right } 
+mutually_exclusive = { focus = PIN_fas } 
+mutually_exclusive = { focus = PIN_ego } 
+completion_reward = { 
+add_popularity = {
+ideology = autocracy
+popularity = 0.4
+}
+set_politics = {
+ruling_party = autocracy
+elections_allowed = no
+}
+remove_ideas = elections_al
+set_party_name = { ideology = autocracy name = PIN_autocracyname }
+ } 
+ } 
+ 
+#Focus for egoism
+focus = { 
+id = PIN_ego
+icon = GFX_goal_continuous_boost_freedom
+x = 34
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_right } 
+mutually_exclusive = { focus = PIN_fas } 
+mutually_exclusive = { focus = PIN_aut } 
+completion_reward = { 
+add_popularity = {
+ideology = egoism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = egoism
+elections_allowed = yes
+}
+set_party_name = { ideology = egoism name = PIN_egoismname }
+ } 
+ } 
+ 
+#Focus for governor Kozlodoev
+focus = { 
+id = PIN_Boflib
+icon = GFX_goal_generic_neutrality_focus
+x = 36
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_Bofan } 
+mutually_exclusive = { focus = PIN_Bofaut } 
+completion_reward = { 
+add_popularity = {
+ideology = liberalism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = liberalism
+elections_allowed = yes
+}
+add_ideas = {
+	elections_al}
+ } 
+ } 
+ 
+#Focus for count Kozlodoev
+focus = { 
+id = PIN_Bofaut
+icon = GFX_focus_ger_revive_kaiserreich
+x = 38
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_Bofan } 
+mutually_exclusive = { focus = PIN_Boflib } 
+completion_reward = { 
+kill_country_leader = yes
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = autocracy
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+}
+add_popularity = {
+ideology = autocracy
+popularity = 0.4
+}
+set_politics = {
+ruling_party = autocracy
+elections_allowed = no
+}
+set_party_name = { ideology = autocracy name = PIN_Kozautocracyname }
+ } 
+ } 
+ 
+#Focus for gensek Kozlodoev
+focus = { 
+id = PIN_Kozal
+icon = GFX_goal_generic_political_pressure
+x = 40
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_independent } 
+mutually_exclusive = { focus = PIN_Kozlib } 
+mutually_exclusive = { focus = PIN_Kozaut } 
+mutually_exclusive = { focus = PIN_Kozfas} 
+completion_reward = { 
+kill_country_leader = yes
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = leftmilitarism
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+	}
+add_popularity = {
+ideology = leftmilitarism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = leftmilitarism
+elections_allowed = no
+}
+set_party_name = { ideology = leftmilitarism name = PIN_Kozaleftmilitarismname }
+ } 
+ } 
+ 
+#Focus for president Kozlodoev
+focus = { 
+id = PIN_Kozlib
+icon = GFX_goal_support_democracy
+x = 42
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_independent } 
+mutually_exclusive = { focus = PIN_Kozal } 
+mutually_exclusive = { focus = PIN_Kozaut } 
+mutually_exclusive = { focus = PIN_Kozfas} 
+completion_reward = { 
+add_popularity = {
+ideology = liberalism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = liberalism
+elections_allowed = yes
+}
+add_ideas = {
+	elections_al}
+set_party_name = { ideology = liberalism name = PIN_conservatismname }
+ } 
+ } 
+ 
+#Focus for king Kozlodoev
+focus = { 
+id = PIN_Kozaut
+icon = GFX_focus_eng_god_save_the_king
+x = 44
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_independent } 
+mutually_exclusive = { focus = PIN_Kozal } 
+mutually_exclusive = { focus = PIN_Kozlib } 
+mutually_exclusive = { focus = PIN_Kozfas} 
+completion_reward = { 
+kill_country_leader = yes
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = autocracy
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+	}
+add_popularity = {
+ideology = autocracy
+popularity = 0.4
+}
+set_politics = {
+ruling_party = autocracy
+elections_allowed = no
+}
+set_party_name = { ideology = autocracy name = PIN_Kozautocracyname }
+ } 
+ } 
+ 
+#Focus for fuhrer Kozlodoev
+focus = { 
+id = PIN_Kozfas
+icon = GFX_focus_ger_reichskommisariats
+x = 46
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = PIN_independent } 
+mutually_exclusive = { focus = PIN_Kozal } 
+mutually_exclusive = { focus = PIN_Kozlib } 
+mutually_exclusive = { focus = PIN_Kozaut } 
+completion_reward = { 
+kill_country_leader = yes
+create_country_leader = {
+	name = "Old Man Kozlodoev"
+	desc = "POLITICS_KOZLODOEV_DESC"
+	picture = "gfx/leaders/Portrait_PIN_Governor.dds"
+	expire = "2026.1.1"
+	ideology = nazism
+	traits = {
+		nosy_as_crake
+		folk_idol
+	}
+	}
+add_popularity = {
+ideology = fascism
+popularity = 0.4
+}
+set_politics = {
+ruling_party = fascism
+elections_allowed = no
+}
+set_party_name = { ideology = fascism name = PIN_Kozfascismname }
+ } 
  } 
 
- } 
 #Vanilla focuses
 	focus = {
 		id = army_effort

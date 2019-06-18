@@ -41,6 +41,7 @@ set_politics = {
 }
 
 add_ideas = {
+	elections_al
 	volunteer_only
 	civilian_economy
 }
@@ -52,53 +53,11 @@ create_country_leader = {
 	expire = "2026.1.1"
 	ideology = liberalism
 	traits = {
-		#
+		nosy_as_crake
+		folk_idol
 	}
 }
 
-create_country_leader = {
-	name = "Wise Leader Kozlodoev"
-	desc = "POLITICS_KOZLODOEV_DESC"
-	picture = "GFX_Portrait_PIN_Governor2.dds"
-	expire = "2026.1.1"
-	ideology = autocracy
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pure Kozlodoev"
-	desc = "POLITICS_KOZLODOEV_DESC"
-	picture = "GFX_Portrait_PIN_Governor2.dds"
-	expire = "2026.1.1"
-	ideology = fascism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Gensec Kozlodoev"
-	desc = "POLITICS_KOZLODOEV_DESC"
-	picture = "GFX_Portrait_PIN_Governor2.dds"
-	expire = "2026.1.1"
-	ideology = leftmilitarism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Businessman Kozlodoev"
-	desc = "POLITICS_KOZLODOEV_DESC"
-	picture = "GFX_Portrait_PIN_Governor2.dds"
-	expire = "2026.1.1"
-	ideology = egoism
-	traits = {
-		#
-	}
-}
 
 create_country_leader = {
 	name = "Zhravoi Kritski"

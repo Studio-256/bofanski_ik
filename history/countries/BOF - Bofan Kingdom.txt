@@ -73,6 +73,7 @@ add_to_faction = SLA
 add_to_faction = PIN
 
 add_ideas = {
+	elections_al
 	volunteer_only
 	civilian_economy
 }

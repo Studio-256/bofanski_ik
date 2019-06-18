@@ -3,6 +3,23 @@
 # Mostly removed _drift
 
 leader_traits = {
+	nosy_as_crake = {
+		random = no
+		army_defence_factor = 0.15
+		army_morale_Factor = 0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	folk_idol = {
+		random = no
+		political_power_factor = 0.5
+		stability_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	dictator = {
 		random = no
