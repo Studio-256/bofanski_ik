@@ -8,7 +8,10 @@ state={
 	history={
 		owner = PIN
 		add_core_of = PIN
-		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
 
 	}
 	state_category = rural

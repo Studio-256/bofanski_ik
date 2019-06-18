@@ -8,7 +8,8 @@ state={
 		add_core_of = PIN
 		buildings = {
 			infrastructure = 6
-
+			arms_factory = 2
+			industrial_complex = 2
 		}
 		victory_points = {
 			6778 20 
@@ -19,7 +20,7 @@ state={
 	provinces={
 		1073 1944 2057 2956 3375 3539 6749 6754 6778 
 	}
-	manpower=1353670
+	manpower=1553670
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

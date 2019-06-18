@@ -17,7 +17,7 @@ state={
 	
 		buildings = {
 			infrastructure = 8
-
+			dockyard = 1
 		}
 		add_core_of = XIA
 	}

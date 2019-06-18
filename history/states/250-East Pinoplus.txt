@@ -8,10 +8,15 @@ state={
 	history={
 		owner = PIN
 		add_core_of = PIN
-		
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+			dockyard = 1
+		}
 
 	}
 	state_category = city
-	manpower=1247900
+	manpower=1747900
 	buildings_max_level_factor=1.000
 }

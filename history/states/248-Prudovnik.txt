@@ -8,7 +8,10 @@ state={
 		history={
 		owner = SLA
 		add_core_of = SLA
-		
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+		}
 	}
 	state_category = town
 	manpower=945683
