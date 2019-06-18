@@ -119,23 +119,23 @@ XIA_INF_RESERVE_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Piechoty Rezerwy"
+	fallback_name = "%d Xiak Narode Infanteria"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{	
-		33 = { "%d Dywizja Piechoty Rezerwy" }		
-		35 = { "%d Dywizja Piechoty Rezerwy" }		
-		36 = { "%d Dywizja Piechoty Rezerwy" }		
-		38 = { "%d Dywizja Piechoty Rezerwy" }		
-		39 = { "%d Dywizja Piechoty Rezerwy" }		
-		41 = { "%d Dywizja Piechoty Rezerwy" }		
-		44 = { "%d Dywizja Piechoty Rezerwy" }		
-		45 = { "%d Dywizja Piechoty Rezerwy" }		
-		50 = { "%d Dywizja Piechoty Rezerwy" }		
-		55 = { "%d Dywizja Piechoty Rezerwy" }		
-		60 = { "%d Dywizja Piechoty Rezerwy" }		
+		33 = { "%d Xiak Narode Infanteria" }		
+		35 = { "%d Xiak Narode Infanteria" }		
+		36 = { "%d Xiak Narode Infanteria" }		
+		38 = { "%d Xiak Narode Infanteria" }		
+		39 = { "%d Xiak Narode Infanteria" }		
+		41 = { "%d Xiak Narode Infanteria" }		
+		44 = { "%d Xiak Narode Infanteria" }		
+		45 = { "%d Xiak Narode Infanteria" }		
+		50 = { "%d Xiak Narode Infanteria" }		
+		55 = { "%d Xiak Narode Infanteria" }		
+		60 = { "%d Xiak Narode Infanteria" }		
 	}
 }
 
@@ -152,32 +152,30 @@ XIA_CAV_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Brygada Kawalerii"
+	fallback_name = "%d Zoldat Konskih Ot-delenie"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		101 = { "Krakowska Brygada Kawalerii" }		# use historical named brigades for initial names then default numbered divisions for ahistorical names
-		102 = { "Kresowa Brygada Kawalerii" }		
-		103 = { "Mazowiecka Brygada Kawalerii" }		
-		104 = { "Nowogródzka Brygada Kawalerii" }		
-		105 = { "Podlaska Brygada Kawalerii" }		
-		106 = { "Podolska Brygada Kawalerii" }		
-		107 = { "Pomorska Brygada Kawalerii" }		
-		108 = { "Suwalska Brygada Kawalerii" }		
-		109 = { "WielkoXIAska Brygada Kawalerii" }		
-		110 = { "Wilenska Brygada Kawalerii" }		
-		111 = { "Wołynska Brygada Kawalerii" }		
+		101 = { "Flevintor Zoldat Konskih Ot-delenie" }		# use historical named brigades for initial names then default numbered divisions for ahistorical names
+		102 = { "Lapuam Zoldat Konskih Ot-delenie" }		
+		103 = { "Skeia Zoldat Konskih Ot-delenie" }		
+		104 = { "Ternfol Zoldat Konskih Ot-delenie" }		
+		105 = { "Neroidan Zoldat Konskih Ot-delenie" }		
+		106 = { "Gornoput Zoldat Konskih Ot-delenie" }		
+		107 = { "Zertzoi Zoldat Konskih Ot-delenie" }		
+		108 = { "Xianestria Zoldat Konskih Ot-delenie" }		
+		109 = { "Staralakar Zoldat Konskih Ot-delenie" }		
+		110 = { "Drugylakar Zoldat Konskih Ot-delenie" }		
+		111 = { "Sxitanga Zoldat Konskih Ot-delenie" }		
 		#fictional names fitting the theme
-		112 = { "Lwowska Brygada Kawalerii" }		
-		113 = { "XIAeska Brygada Kawalerii" }		
-		114 = { "Łódzka Brygada Kawalerii" }		
-		115 = { "Lubelska Brygada Kawalerii" }		
-		116 = { "Kielecka Brygada Kawalerii" }		
-		117 = { "Górnośląska Brygada Kawalerii" }		
-		118 = { "TarnoXIAska Brygada Kawalerii" }		
-		119 = { "Stanisławowska Brygada Kawalerii" }		
+		112 = { "Landu Zoldat Konskih Ot-delenie" }		
+		113 = { "Kajginthep Zoldat Konskih Ot-delenie" }		
+		114 = { "Enji Zoldat Konskih Ot-delenie" }		
+		115 = { "Grenisx Zoldat Konskih Ot-delenie" }		
+		116 = { "Grel Zoldat Konskih Ot-delenie" }		
+		117 = { "Panland Zoldat Konskih Ot-delenie" }				
 	}
 }
 
@@ -194,32 +192,15 @@ XIA_CAV_DIVISION_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_CAV_01 }
 
-	fallback_name = "%d Dywizja Kawalerii"
+	fallback_name = "%d Zoldat Konskih Legion"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{	
-		101 = { "Krakowska Dywizja Kawalerii" }		# use historical named brigades for initial names then default numbered divisions for ahistorical names
-		102 = { "Kresowa Dywizja Kawalerii" }		
-		103 = { "Mazowiecka Dywizja Kawalerii" }		
-		104 = { "Nowogródzka Dywizja Kawalerii" }		
-		105 = { "Podlaska Dywizja Kawalerii" }		
-		106 = { "Podolska Dywizja Kawalerii" }		
-		107 = { "Pomorska Dywizja Kawalerii" }		
-		108 = { "Suwalska Dywizja Kawalerii" }		
-		109 = { "WielkoXIAska Dywizja Kawalerii" }		
-		110 = { "Wilenska Dywizja Kawalerii" }		
-		111 = { "Wołynska Dywizja Kawalerii" }		
-		#fictional names fitting the theme
-		112 = { "Lwowska Dywizja Kawalerii" }		
-		113 = { "XIAeska Dywizja Kawalerii" }		
-		114 = { "Łódzka Dywizja Kawalerii" }		
-		115 = { "Lubelska Dywizja Kawalerii" }		
-		116 = { "Kielecka Dywizja Kawalerii" }		
-		117 = { "Górnośląska Dywizja Kawalerii" }		
-		118 = { "TarnoXIAska Dywizja Kawalerii" }		
-		119 = { "Stanisławowska Dywizja Kawalerii" }	
+		101 = { "Ternfolgorske Zoldat Konskih Legion" }		# use historical named brigades for initial names then default numbered divisions for ahistorical names
+		102 = { "Landoholmecke Zoldat Konskih Legion" }		
+		103 = { "Sxitangoholmecke Zoldat Konskih Legion" }		
 	}
 }
 
@@ -237,41 +218,41 @@ XIA_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Motorowa"
+	fallback_name = "%d Tacxankov Ot-delenie"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		101 = { " Warszawska Dywizja Motorowa" }
-		10 = { "%d Dywizja Motorowa" }
-		1 = { "%d Dywizja Motorowa Legionów" }
-		2 = { "%d Dywizja Motorowa Legionów" }
-		3 = { "%d Dywizja Motorowa Legionów" }
-		4 = { "%d Dywizja Motorowa" }
-		5 = { "%d Dywizja Motorowa" }
-		6 = { "%d Dywizja Motorowa" }
-		7 = { "%d Dywizja Motorowa" }
-		8 = { "%d Dywizja Motorowa" }
-		9 = { "%d Dywizja Motorowa" }
-		11 = { "%d Karpacka Dywizja Motorowa" }
-		12 = { "%d Dywizja Motorowa" }
-		13 = { "%d Kresowa Dywizja Motorowa" }
-		14 = { "%d WielkoXIAska Dywizja Motorowa" }
-		15 = { "%d WielkoXIAska Dywizja Motorowa" }
-		16 = { "%d Pomorska Dywizja Motorowa" }
-		17 = { "%d WielkoXIAska Dywizja Motorowa" }
-		18 = { "%d Dywizja Motorowa" }
-		19 = { "%d Dywizja Motorowa" }
-		20 = { "%d Dywizja Motorowa" }		
-		23 = { "%d Górnośląska Dywizja Motorowa" }		
-		24 = { "%d Dywizja Motorowa" }		
-		25 = { "%d Dywizja Motorowa" }		
-		26 = { "%d Dywizja Motorowa" }		
-		27 = { "%d Dywizja Motorowa" }		
-		28 = { "%d Dywizja Motorowa" }		
-		29 = { "%d Dywizja Motorowa" }		
-		30 = { "%d XIAeska Dywizja Motorowa" }		
+		101 = { "%d Xianestria Tacxankov Ot-delenie" }
+		10 = { "%d Tacxankov Ot-delenie" }
+		1 = { "%d Tacxankov Ot-delenie " }
+		2 = { "%d Tacxankov Ot-delenie " }
+		3 = { "%d Tacxankov Ot-delenie " }
+		4 = { "%d Tacxankov Ot-delenie" }
+		5 = { "%d Tacxankov Ot-delenie" }
+		6 = { "%d Tacxankov Ot-delenie" }
+		7 = { "%d Tacxankov Ot-delenie" }
+		8 = { "%d Tacxankov Ot-delenie" }
+		9 = { "%d Tacxankov Ot-delenie" }
+		11 = { "%d Tacxankov Ot-delenie" }
+		12 = { "%d Tacxankov Ot-delenie" }
+		13 = { "%d Tacxankov Ot-delenie" }
+		14 = { "%d Tacxankov Ot-delenie" }
+		15 = { "%d Tacxankov Ot-delenie" }
+		16 = { "%d Tacxankov Ot-delenie" }
+		17 = { "%d Tacxankov Ot-delenie" }
+		18 = { "%d Tacxankov Ot-delenie" }
+		19 = { "%d Tacxankov Ot-delenie" }
+		20 = { "%d Tacxankov Ot-delenie" }		
+		23 = { "%d Tacxankov Ot-delenie" }		
+		24 = { "%d Tacxankov Ot-delenie" }		
+		25 = { "%d Tacxankov Ot-delenie" }		
+		26 = { "%d Tacxankov Ot-delenie" }		
+		27 = { "%d Tacxankov Ot-delenie" }		
+		28 = { "%d Tacxankov Ot-delenie" }		
+		29 = { "%d Tacxankov Ot-delenie" }		
+		30 = { "%d Tacxankov Ot-delenie" }		
 	}
 }
 
@@ -288,41 +269,41 @@ XIA_MEC_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Zmechanizowana"
+	fallback_name = "%d Auton Ot-delenie"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		101 = { "Warszawska Dywizja Zmechanizowana" }
-		10 = { "%d Dywizja Zmechanizowana" }
-		1 = { "%d Dywizja Zmechanizowana Legionów" }
-		2 = { "%d Dywizja Zmechanizowana Legionów" }
-		3 = { "%d Dywizja Zmechanizowana Legionów" }
-		4 = { "%d Dywizja Zmechanizowana" }
-		5 = { "%d Dywizja Zmechanizowana" }
-		6 = { "%d Dywizja Zmechanizowana" }
-		7 = { "%d Dywizja Zmechanizowana" }
-		8 = { "%d Dywizja Zmechanizowana" }
-		9 = { "%d Dywizja Zmechanizowana" }
-		11 = { "%d Karpacka Dywizja Zmechanizowana" }
-		12 = { "%d Dywizja Zmechanizowana" }
-		13 = { "%d Kresowa Dywizja Zmechanizowana" }
-		14 = { "%d WielkoXIAska Dywizja Zmechanizowana" }
-		15 = { "%d WielkoXIAska Dywizja Zmechanizowana" }
-		16 = { "%d Pomorska Dywizja Zmechanizowana" }
-		17 = { "%d WielkoXIAska Dywizja Zmechanizowana" }
-		18 = { "%d Dywizja Zmechanizowana" }
-		19 = { "%d Dywizja Zmechanizowana" }
-		20 = { "%d Dywizja Zmechanizowana" }		
-		23 = { "%d Górnośląska Dywizja Zmechanizowana" }		
-		24 = { "%d Dywizja Zmechanizowana" }		
-		25 = { "%d Dywizja Zmechanizowana" }		
-		26 = { "%d Dywizja Zmechanizowana" }		
-		27 = { "%d Dywizja Zmechanizowana" }		
-		28 = { "%d Dywizja Zmechanizowana" }		
-		29 = { "%d Dywizja Zmechanizowana" }		
-		30 = { "%d XIAeska Dywizja Zmechanizowana" }		
+		101 = { "Stolicxne Auton Ot-delenie" }
+		10 = { "%d Auton Ot-delenie" }
+		1 = { "%d Auton Ot-delenie" }
+		2 = { "%d Auton Ot-delenie" }
+		3 = { "%d Auton Ot-delenie" }
+		4 = { "%d Auton Ot-delenie" }
+		5 = { "%d Auton Ot-delenie" }
+		6 = { "%d Auton Ot-delenie" }
+		7 = { "%d Auton Ot-delenie" }
+		8 = { "%d Auton Ot-delenie" }
+		9 = { "%d Auton Ot-delenie" }
+		11 = { "%d Auton Ot-delenie" }
+		12 = { "%d Auton Ot-delenie" }
+		13 = { "%d Auton Ot-delenie" }
+		14 = { "%d Auton Ot-delenie" }
+		15 = { "%d Auton Ot-delenie" }
+		16 = { "%d Auton Ot-delenie" }
+		17 = { "%d Auton Ot-delenie" }
+		18 = { "%d Auton Ot-delenie" }
+		19 = { "%d Auton Ot-delenie" }
+		20 = { "%d Auton Ot-delenie" }		
+		23 = { "%d Auton Ot-delenie" }		
+		24 = { "%d Auton Ot-delenie" }		
+		25 = { "%d Auton Ot-delenie" }		
+		26 = { "%d Auton Ot-delenie" }		
+		27 = { "%d Auton Ot-delenie" }		
+		28 = { "%d Auton Ot-delenie" }		
+		29 = { "%d Auton Ot-delenie" }		
+		30 = { "%d Auton Ot-delenie" }		
 	}
 }
 
@@ -339,13 +320,13 @@ XIA_ARM_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Pancerna"
+	fallback_name = "%d Tankov Ot-delenie"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Dywizja Pancerna" }
+		1 = { "%d Tankov Ot-delenie" }
 	}
 }
 
@@ -429,42 +410,42 @@ XIA_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Piechoty Górskiej"
+	fallback_name = "%d Gorne Orucxne"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		21 = { "%d Dywizja Piechoty Górskiej" }		
-		22 = { "%d Dywizja Piechoty Górskiej" }		
-		1 = { "%d Dywizja Piechoty Górskiej Legionów" }
-		2 = { "%d Dywizja Piechoty Górskiej Legionów" }
-		3 = { "%d Dywizja Piechoty Górskiej Legionów" }
-		4 = { "%d Dywizja Piechoty Górskiej" }
-		5 = { "%d Dywizja Piechoty Górskiej" }
-		6 = { "%d Dywizja Piechoty Górskiej" }
-		7 = { "%d Dywizja Piechoty Górskiej" }
-		8 = { "%d Dywizja Piechoty Górskiej" }
-		9 = { "%d Dywizja Piechoty Górskiej" }
-		10 = { "%d Dywizja Piechoty Górskiej" }
-		11 = { "%d Karpacka Dywizja Piechoty Górskiej" }
-		12 = { "%d WielkoXIAska Dywizja Piechoty Górskiej" }
-		13 = { "%d WielkoXIAska Kresowa Dywizja Piechoty Górskiej" }
-		14 = { "%d Pomorska Dywizja Piechoty Górskiej" }
-		15 = { "%d WielkoXIAska Dywizja Piechoty Górskiej" }
-		16 = { "%d Dywizja Piechoty Górskiej" }
-		17 = { "%d Dywizja Piechoty Górskiej" }
-		18 = { "%d Dywizja Piechoty Górskiej" }
-		19 = { "%d Dywizja Piechoty Górskiej" }
-		20 = { "%d Dywizja Piechoty Górskiej" }		
-		23 = { "%d Górnośląska Dywizja Piechoty Górskiej" }		
-		24 = { "%d Dywizja Piechoty Górskiej" }		
-		25 = { "%d Dywizja Piechoty Górskiej" }		
-		26 = { "%d Dywizja Piechoty Górskiej" }		
-		27 = { "%d Dywizja Piechoty Górskiej" }		
-		28 = { "%d Dywizja Piechoty Górskiej" }		
-		29 = { "%d Dywizja Piechoty Górskiej" }		
-		30 = { "%d XIAeska Dywizja Piechoty Górskiej" }		
+		21 = { "%d Gorne Orucxne" }		
+		22 = { "%d Gorne Orucxne" }		
+		1 = { "%d Gorne Orucxne " }
+		2 = { "%d Gorne Orucxne " }
+		3 = { "%d Gorne Orucxne " }
+		4 = { "%d Gorne Orucxne" }
+		5 = { "%d Gorne Orucxne" }
+		6 = { "%d Gorne Orucxne" }
+		7 = { "%d Gorne Orucxne" }
+		8 = { "%d Gorne Orucxne" }
+		9 = { "%d Gorne Orucxne" }
+		10 = { "%d Gorne Orucxne" }
+		11 = { "%d Gorne Orucxne" }
+		12 = { "%d Gorne Orucxne" }
+		13 = { "%d Gorne Orucxne" }
+		14 = { "%d Gorne Orucxne" }
+		15 = { "%d Gorne Orucxne" }
+		16 = { "%d Gorne Orucxne" }
+		17 = { "%d Gorne Orucxne" }
+		18 = { "%d Gorne Orucxne" }
+		19 = { "%d Gorne Orucxne" }
+		20 = { "%d Gorne Orucxne" }		
+		23 = { "%d Gorne Orucxne" }		
+		24 = { "%d Gorne Orucxne" }		
+		25 = { "%d Gorne Orucxne" }		
+		26 = { "%d Gorne Orucxne" }		
+		27 = { "%d Gorne Orucxne" }		
+		28 = { "%d Gorne Orucxne" }		
+		29 = { "%d Gorne Orucxne" }		
+		30 = { "%d Gorne Orucxne" }		
 	}
 }
 
