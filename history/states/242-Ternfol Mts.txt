@@ -16,9 +16,10 @@ state={
 		owner = XIA
 		victory_points = {
 			2025 5
+		}
+		victory_points = {
 			7503 5
 		}
-	
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

@@ -10,11 +10,11 @@ state={
 		add_core_of = SLA
 		buildings = {
 			infrastructure = 3
-			buildings = {
-			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
-		}
+			5091 = {
+			naval_base = 2
+			}
 		}
 		victory_points = {
 			5091 5 

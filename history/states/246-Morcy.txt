@@ -12,6 +12,10 @@ state={
 			infrastructure = 5
 			industrial_complex = 1
 			dockyard = 1
+			5076 = {
+				naval_base = 4
+
+			}			
 		}
 	}
 	state_category = city
