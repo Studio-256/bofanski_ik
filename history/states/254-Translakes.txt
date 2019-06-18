@@ -11,8 +11,11 @@ state={
 			infrastructure = 4
 			industrial_complex = 1
 		}
+		victory_points = {
+			5531 3
+		}
 	}
 	state_category = rural
-	manpower=293409
+	manpower=593409
 	buildings_max_level_factor=1.000
 }

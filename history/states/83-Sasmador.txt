@@ -6,24 +6,23 @@ state={
 		owner = SAS
 		add_core_of = SAS
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
+			infrastructure = 4
+			arms_factory = 2
 			dockyard = 1
-			6925 = {
+			9 = {
 				naval_base = 6
-
 			}
 		}
 		victory_points = {
-			9 20 
+			9 15
 		}
 
 	}
 
 	provinces={
-		9 276 6151 6925 6973 7025 
+		9 1253 6151 6973 7025 
 	}
-	manpower=1705900
+	manpower=1305900
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

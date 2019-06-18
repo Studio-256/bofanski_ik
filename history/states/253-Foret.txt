@@ -11,9 +11,11 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		
+		victory_points = {
+			6957 1
+		}
 	}
 	state_category = pastoral
-	manpower=194083
+	manpower=250674
 	buildings_max_level_factor=1.000
 }
