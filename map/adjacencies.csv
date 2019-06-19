@@ -1,2 +1,4 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
--1;-1;;-1;-1;-1;-1;-1;-1
+7391;7546;sea;18478;-1;-1;-1;-1;;Xian-Island
+19887;17452;sea;6544;-1;-1;-1;-1;E_QL_CANAL;
+16185;18343;sea;3378;-1;-1;-1;-1;LAPUAM_E_CANAL;enji
