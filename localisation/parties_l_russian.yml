@@ -26,8 +26,14 @@
  XIA_liberalism_party:0 "Генерал-губернаторство"
  XIA_socialism_party:0 "Социалистическое Содружество"
  XIA_leftmilitarism_party:0 "Свей Снейн"
+ XIA_socdem_party:0 "Блок Сикорской"
+ XIA_conservatism_party:0 "Центральный Домен"
+ 
+ 
  SAS_liberalism_party:0 "Генерал-губернаторство"
+ 
  SLA_liberalism_party:0 "Генерал-губернаторство"
+ 
  PIN_liberalism_party:0 "Генерал-губернаторство"
  PIN_parlamentname:0 "Парламент Пайноплуса"
  PIN_alname:0 "Коммунистическая Партия Пайноплуса"

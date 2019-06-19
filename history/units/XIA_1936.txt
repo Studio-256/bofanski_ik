@@ -33,7 +33,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Xiak Coloni Konnice Orusxne" 
+	name = "Xiak Coloni Konnice Oruzxne" 
 	division_names_group = XIA_CAV_01
 
 	regiments = {
@@ -50,61 +50,71 @@ units = {
 	division = {
 		name = "Panland Gardixo"
 		location = 4868
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"	
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Militaria na Xianestrie"
 		location = 4351
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Zaxle Gardixo"
 		location = 882
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Zertzoi Gardixo"
 		location = 1036
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Dominiul Gardixo"
 		location = 4058
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"	
+		start_experience_factor = 0.1
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Staralakar Gardixo"
 		location = 273
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Rohlik Fun Troops"
 		location = 4351
 		division_template = "Xiak Coloni Infanteria"		
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Lesova Gardixo"
 		location = 7187
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Enji Gardixo"
 		location = 7216
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "Rozumpolize"
 		location = 4351
-		division_template = "Xiak Coloni Infanteria"		
+		division_template = "Xiak Coloni Infanteria"
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 }

@@ -340,13 +340,13 @@ XIA_ARM_BRIGADE_01 =
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
-	fallback_name = "%d Brygada Pancerna"
+	fallback_name = "%d Tankov Gruppa"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Brygada Pancerna" }
+		1 = { "%d Tankov Gruppa" }
 	}
 }
 
@@ -363,13 +363,13 @@ XIA_PAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Spadochronowa"
+	fallback_name = "%d Desantura Oruzxne"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Dywizja Spadochronowa" }
+		1 = { "%d Desantura Oruzxne" }
 
 	}
 }
@@ -387,13 +387,13 @@ XIA_MAR_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Dywizja Piechoty Morskiej"
+	fallback_name = "%d Marines"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d Dywizja Piechoty Morskiej" }
+		1 = { "%d Marines" }
 	}
 }
 
@@ -410,42 +410,42 @@ XIA_MNT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Gorne Orucxne"
+	fallback_name = "%d Gorne Oruzxne"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		21 = { "%d Gorne Orucxne" }		
-		22 = { "%d Gorne Orucxne" }		
-		1 = { "%d Gorne Orucxne " }
-		2 = { "%d Gorne Orucxne " }
-		3 = { "%d Gorne Orucxne " }
-		4 = { "%d Gorne Orucxne" }
-		5 = { "%d Gorne Orucxne" }
-		6 = { "%d Gorne Orucxne" }
-		7 = { "%d Gorne Orucxne" }
-		8 = { "%d Gorne Orucxne" }
-		9 = { "%d Gorne Orucxne" }
-		10 = { "%d Gorne Orucxne" }
-		11 = { "%d Gorne Orucxne" }
-		12 = { "%d Gorne Orucxne" }
-		13 = { "%d Gorne Orucxne" }
-		14 = { "%d Gorne Orucxne" }
-		15 = { "%d Gorne Orucxne" }
-		16 = { "%d Gorne Orucxne" }
-		17 = { "%d Gorne Orucxne" }
-		18 = { "%d Gorne Orucxne" }
-		19 = { "%d Gorne Orucxne" }
-		20 = { "%d Gorne Orucxne" }		
-		23 = { "%d Gorne Orucxne" }		
-		24 = { "%d Gorne Orucxne" }		
-		25 = { "%d Gorne Orucxne" }		
-		26 = { "%d Gorne Orucxne" }		
-		27 = { "%d Gorne Orucxne" }		
-		28 = { "%d Gorne Orucxne" }		
-		29 = { "%d Gorne Orucxne" }		
-		30 = { "%d Gorne Orucxne" }		
+		21 = { "%d Gorne Oruzxne" }		
+		22 = { "%d Gorne Oruzxne" }		
+		1 = { "%d Gorne Oruzxne " }
+		2 = { "%d Gorne Oruzxne " }
+		3 = { "%d Gorne Oruzxne " }
+		4 = { "%d Gorne Oruzxne" }
+		5 = { "%d Gorne Oruzxne" }
+		6 = { "%d Gorne Oruzxne" }
+		7 = { "%d Gorne Oruzxne" }
+		8 = { "%d Gorne Oruzxne" }
+		9 = { "%d Gorne Oruzxne" }
+		10 = { "%d Gorne Oruzxne" }
+		11 = { "%d Gorne Oruzxne" }
+		12 = { "%d Gorne Oruzxne" }
+		13 = { "%d Gorne Oruzxne" }
+		14 = { "%d Gorne Oruzxne" }
+		15 = { "%d Gorne Oruzxne" }
+		16 = { "%d Gorne Oruzxne" }
+		17 = { "%d Gorne Oruzxne" }
+		18 = { "%d Gorne Oruzxne" }
+		19 = { "%d Gorne Oruzxne" }
+		20 = { "%d Gorne Oruzxne" }		
+		23 = { "%d Gorne Oruzxne" }		
+		24 = { "%d Gorne Oruzxne" }		
+		25 = { "%d Gorne Oruzxne" }		
+		26 = { "%d Gorne Oruzxne" }		
+		27 = { "%d Gorne Oruzxne" }		
+		28 = { "%d Gorne Oruzxne" }		
+		29 = { "%d Gorne Oruzxne" }		
+		30 = { "%d Gorne Oruzxne" }		
 	}
 }
 
@@ -462,29 +462,15 @@ XIA_GAR_01 =
 	# Number reservation system will tie to another group.
 	# link_numbering_with = { XIA_INF_01 }
 
-	fallback_name = "%d Brygada KOP"
+	fallback_name = "%d Kordonovy"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
 	
-		1 = { "%d Brygada Ochrony Pogranicza" }
-		2 = { "%d Brygada Ochrony Pogranicza" }
-		3 = { "%d Brygada Ochrony Pogranicza" }
-		4 = { "%d Brygada Ochrony Pogranicza" }
-		5 = { "%d Brygada Ochrony Pogranicza" }
-		6 = { "%d Brygada Ochrony Pogranicza" }
-		7 = { "Brygada KOP Modlin" }
-		8 = { "Brygada KOP Bydgoszcz" }
-		9 = { "Brygada KOP Poznań" }
-		10 = { "Brygada KOP Katowice" }
-		11 = { "Brygada KOP Sanok" }
-		12 = { "Brygada KOP Grodno" }	
-		13 = { "Brygada KOP Wilno" }	
-		14 = { "Brygada KOP Nowogródek" }
-		15 = { "Brygada KOP XIAesie" }
-		16 = { "Brygada KOP Wołyń" }
-		17 = { "Brygada KOP Podole" }		
+		1 = { "%d Kordonovy" }
+		2 = { "%d Kordonovy" }
+		
 	}
 }

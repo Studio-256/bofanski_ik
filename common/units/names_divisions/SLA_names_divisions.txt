@@ -1,0 +1,325 @@
+# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+SLA_INF_01 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Slandsky Colonialny Pesxi"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = 
+	{ 
+		11 = { "%d Zmetensky Colonialni Pesxi" }
+		12 = { "%d Primorecki Colonialni Pesxi" }
+		13 = { "%d Karavicke Colonialni Pesxi" }
+		14 = { "%d Slandsky Colonialni Pesxi" }
+	}
+
+}
+
+SLA_CAV_01 = 
+{
+	name = "Cavalry Unit"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "Kavalerii Jednica %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Kavalerii Jednica %d" }
+		2 = { "Kavalerii Jednica %d" }
+		3 = { "Kavalerii Jednica %d" }
+		4 = { "Kavalerii Jednica %d" }
+		5 = { "Kavalerii Jednica %d" }
+		6 = { "Kavalerii Jednica %d" }
+		7 = { "Kavalerii Jednica %d" }
+		8 = { "Kavalerii Jednica %d" }
+		9 = { "Kavalerii Jednica %d" }
+		10 = { "Kavalerii Jednica %d" }
+	}
+}
+
+SLA_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "Motorova Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Motorova Jednica" }
+		2 = { "%d Motorova Jednica" }
+		3 = { "%d Motorova Jednica" }
+		4 = { "%d Motorova Jednica" }
+		5 = { "%d Motorova Jednica" }
+		6 = { "%d Motorova Jednica" }
+		7 = { "%d Motorova Jednica" }
+		8 = { "%d Motorova Jednica" }
+		9 = { "%d Motorova Jednica" }
+		10 = { "%d Motorova Jednica" }
+	}
+}
+
+SLA_MEC_01 = 
+{
+	name = "Mechanized Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_CAV_01 }
+
+	fallback_name = "%d Mekanizovana Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Mekanizovana Jednica" }
+		2 = { "%d Mekanizovana Jednica" }
+		3 = { "%d Mekanizovana Jednica" }
+		4 = { "%d Mekanizovana Jednica" }
+		5 = { "%d Mekanizovana Jednica" }
+		6 = { "%d Mekanizovana Jednica" }
+		7 = { "%d Mekanizovana Jednica" }
+		8 = { "%d Mekanizovana Jednica" }
+		9 = { "%d Mekanizovana Jednica" }
+		10 = { "%d Mekanizovana Jednica" }
+	}
+}
+
+SLA_ARM_01 = 
+{
+	name = "Armored Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Tankova Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Tankova Jednica" }
+		2 = { "%d Tankova Jednica" }
+		3 = { "%d Tankova Jednica" }
+		4 = { "%d Tankova Jednica" }
+		5 = { "%d Tankova Jednica" }
+		6 = { "%d Tankova Jednica" }
+		7 = { "%d Tankova Jednica" }
+		8 = { "%d Tankova Jednica" }
+		9 = { "%d Tankova Jednica" }
+		10 = { "%d Tankova Jednica" }
+	}
+}
+
+SLA_PAR_01 = 
+{
+	name = "Paratrooper Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Vozduhoplovska Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Vozduhoplovska Jednica" }
+		2 = { "%d Vozduhoplovska Jednica" }
+		3 = { "%d Vozduhoplovska Jednica" }
+		4 = { "%d Vozduhoplovska Jednica" }
+		5 = { "%d Vozduhoplovska Jednica" }
+		6 = { "%d Vozduhoplovska Jednica" }
+		7 = { "%d Vozduhoplovska Jednica" }
+		8 = { "%d Vozduhoplovska Jednica" }
+		9 = { "%d Vozduhoplovska Jednica" }
+		10 = { "%d Vozduhoplovska Jednica" }
+	}
+}
+
+SLA_MAR_01 = 
+{
+	name = "Marine Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Morskoplovska Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Morskoplovska Jednica" }
+		2 = { "%d Morskoplovska Jednica" }
+		3 = { "%d Morskoplovska Jednica" }
+		4 = { "%d Morskoplovska Jednica" }
+		5 = { "%d Morskoplovska Jednica" }
+		6 = { "%d Morskoplovska Jednica" }
+		7 = { "%d Morskoplovska Jednica" }
+		8 = { "%d Morskoplovska Jednica" }
+		9 = { "%d Morskoplovska Jednica" }
+		10 = { "%d Morskoplovska Jednica" }
+	}
+}
+
+SLA_MNT_01 = 
+{
+	name = "Mountain Division"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	# Number reservation system will tie to another group.
+	link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Gorska Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Gorska Jednica" }
+		2 = { "%d Gorska Jednica" }
+		3 = { "%d Gorska Jednica" }
+		4 = { "%d Gorska Jednica" }
+		5 = { "%d Gorska Jednica" }
+		6 = { "%d Gorska Jednica" }
+		7 = { "%d Gorska Jednica" }
+		8 = { "%d Gorska Jednica" }
+		9 = { "%d Gorska Jednica" }
+		10 = { "%d Gorska Jednica" }
+		11 = { "%d Gorska Jednica" }
+		12 = { "%d Gorska Jednica" }
+		13 = { "%d Gorska Jednica" }
+		14 = { "%d Gorska Jednica" }
+		15 = { "%d Gorska Jednica" }
+		16 = { "%d Gorska Jednica" }
+		17 = { "%d Gorska Jednica" }
+		18 = { "%d Gorska Jednica" }
+		19 = { "%d Gorska Jednica" }
+		20 = { "%d Gorska Jednica" }
+	}
+}
+
+SLA_GAR_01 = 
+{
+	name = "Garrison Unit"
+
+	for_countries = { SLA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { SLA_INF_01 }
+
+	fallback_name = "%d Garnizonova Jednica"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d Garnizonova Jednica" }
+		2 = { "%d Garnizonova Jednica" }
+		3 = { "%d Garnizonova Jednica" }
+		4 = { "%d Garnizonova Jednica" }
+		5 = { "%d Garnizonova Jednica" }
+		6 = { "%d Garnizonova Jednica" }
+		7 = { "%d Garnizonova Jednica" }
+		8 = { "%d Garnizonova Jednica" }
+		9 = { "%d Garnizonova Jednica" }
+		10 = { "%d Garnizonova Jednica" }		
+	}
+}

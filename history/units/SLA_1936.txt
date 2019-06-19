@@ -1,0 +1,303 @@
+division_template = {
+	name = "Slandsky Colonialny Pesxi"					# Infantry Division
+	division_names_group = SLA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Gorska Jednica"					# Mountain Division
+	division_names_group = SLA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kavalerii Jednica"				# Cavalry Brigade -- precursor to Fast Divisions. Fast Divisions add 2nd regiment of 2x L tank, 2x mot 
+	division_names_group = SLA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+	}
+}
+
+division_template = {
+	name = "Skorojezdecko Voisko"	#Fast division		
+	division_names_group = SLA_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+	}
+}
+
+
+units = {
+	#### Slandska Colonialna Armea #####
+	# directly subordinate
+	
+	division = { # "1. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7000  # Zmeten
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "2. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7000  # Zmeten
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "3. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7000  # Zmeten
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "4. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7000  # Zmeten
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "5. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7085  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "6. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 4455  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "7. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 6868  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "8. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 2881  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "9. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 5091  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "10. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 450  
+		division_template = "Slandsky Colonialny Pesxi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "11. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 6932
+		division_template = "Kavalerii Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "12. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 6932
+		division_template = "Kavalerii Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "13. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 6919
+		division_template = "Kavalerii Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "14. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 2194
+		division_template = "Kavalerii Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "15. divize"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 2194
+		division_template = "Kavalerii Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "16. divize"
+		name = "Mallardska Gorska Jednica"
+		location = 7016
+		division_template = "Gorska Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "17. divize"
+		name = "Mallardska Gorska Jednica"
+		location = 1255
+		division_template = "Gorska Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "18. divize"
+		name = "Mallardska Gorska Jednica"
+		location = 6964
+		division_template = "Gorska Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "19. divize"
+		name = "Mallardska Gorska Jednica"
+		location = 6838
+		division_template = "Gorska Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = { # "20. divize"
+		name = "Mallardska Gorska Jednica"
+		location = 5194
+		division_template = "Gorska Jednica"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+
+
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SLA"
+		}
+		requested_factories = 2
+		progress = 0.18
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SLA"
+		}
+		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "SLA"
+		}
+		requested_factories = 2
+		progress = 0.48
+		efficiency = 100
+	}
+}
