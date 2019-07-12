@@ -23,12 +23,16 @@
  MIR_liberalism_party:0 "Свобода и Мир"
  MIR_socdem_party:0 "Община"
  BOF_liberalism_party:0 "Исполнительная Монополия"
+ 
  XIA_liberalism_party:0 "Генерал-губернаторство"
  XIA_socialism_party:0 "Социалистическое Содружество"
  XIA_leftmilitarism_party:0 "Свей Снейн"
+ XIA_autocracy_party:0 "Гвардейцы Сиакского Пути"
+ XIA_fascism_party:0 "Штурмовики Сиакского Пути"
  XIA_socdem_party:0 "Блок Сикорской"
  XIA_conservatism_party:0 "Центральный Домен"
- 
+ XIA_egalitarism_party:0 "Пакт О Коммунах"
+ XIA_egoism_party:0 "Объединенный Капитал"
  
  SAS_liberalism_party:0 "Генерал-губернаторство"
  

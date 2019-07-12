@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+	XIA_trade_unions_2014 = {
+			
+			
+			allowed = {
+				original_tag = XIA
+				has_completed_focus = XIA_tradeunionsinoutback
+			}
+
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				socialism_drift = 0.03
+				socialism_acceptance = 70
+			}
+			modifier = {
+				leftmilitarism_drift = 0.02
+				leftmilitarism_acceptance = 70
+			}
+			modifier = {
+				socdem_drift = 0.02
+				socdem_acceptance = 70
+			}
+		}
+	XIA_coalition = {
+			
+			allowed = {
+				original_tag = XIA
+				has_completed_focus = XIA_usf_xwxn_coalition
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				socialism_drift = 0.2
+				socialism_acceptance = 90
+			}
+			modifier = {
+				leftmilitarism_drift = 0.15
+				leftmilitarism_acceptance = 75
+			}
+			modifier = {
+				socdem_drift = 0.15
+				socdem_acceptance = 75
+			}
+		}
+	}
+}

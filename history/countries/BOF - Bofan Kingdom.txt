@@ -87,17 +87,17 @@ set_autonomy = {
 	}
 set_autonomy = {
 		target = SAS
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_colony
 		freedom_level = 0.2
 	}
 set_autonomy = {
 		target = SLA
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_colony
 		freedom_level = 0.2
 	}
 set_autonomy = {
 		target = PIN
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_colony
 		freedom_level = 0.2
 	}
 

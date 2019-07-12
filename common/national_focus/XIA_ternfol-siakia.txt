@@ -1,0 +1,165 @@
+focus_tree = { 
+id = ternfol-siakia
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = XIA 
+} 
+} 
+#Focus for our_prospects
+focus = { 
+id = XIA_ourprospects
+icon = GFX_goal_anschluss
+x = 15
+y = 0
+cost = 5
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for remember_1971
+focus = { 
+id = XIA_remember1971
+icon = GFX_focus_generic_support_the_left_right
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_ourprospects } 
+mutually_exclusive = { focus = XIA_remember1951 } 
+mutually_exclusive = { focus = XIA_remember1856 } 
+ai_will_do = { 
+ factor = 3
+ } 
+completion_reward = { 
+add_political_power= 100
+add_popularity= { 
+ideology = socialism
+popularity = 0.1 
+}
+add_popularity= { 
+ideology = leftmilitarism
+popularity = 0.1 
+}
+add_popularity= { 
+ideology = socdem 
+popularity = 0.1 
+}
+ } 
+
+ } 
+
+#Focus for remember_1951
+focus = { 
+id = XIA_remember1951
+icon = GFX_goal_anti_comintern_pact
+x = 18
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_ourprospects } 
+mutually_exclusive = { focus = XIA_remember1971 } 
+mutually_exclusive = { focus = XIA_remember1856 } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for remember_1856
+focus = { 
+id = XIA_remember1856
+icon = GFX_goal_tfv_strengthen_commonwealth_ties
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_ourprospects } 
+mutually_exclusive = { focus = XIA_remember1951 focus = XIA_remember1971 }completion_reward = { 
+add_popularity= { 
+ideology = liberalism
+popularity = 0.2
+}
+ } 
+
+ } 
+
+#Focus for trade_unions_in_outback
+focus = { 
+id = XIA_tradeunionsinoutback
+icon = GFX_focus_YUG_pan_slavic_congress
+x = 12
+y = 2
+cost = 15
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_remember1971 } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas= XIA_trade_unions_2014
+ } 
+
+ } 
+
+#Focus for usf_xwxn_coalition
+focus = { 
+id = XIA_usfxwxncoalition
+icon = GFX_goal_generic_forceful_treaty
+x = 12
+y = 3
+cost = 6
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_tradeunionsinoutback } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+remove_ideas= XIA_trade_unions_2014
+add_ideas= XIA_coalition
+ } 
+
+ } 
+
+#Focus for parliament_meetings
+focus = { 
+id = XIA_parliamentmeetings
+icon = GFX_focus_generic_military_academy
+x = 12
+y = 4
+cost = 6
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_usfxwxncoalition } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+activate_decision= XIA_meeting
+ } 
+
+ } 
+
+#Focus for coup
+focus = { 
+id = XIA_coup
+icon = GFX_goal_generic_war_with_comintern
+x = 12
+y = 5
+cost = 6
+available_if_capitulated = yes 
+prerequisite = { focus = XIA_parliamentmeetings } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+state_event= siakia.5
+ } 
+
+ } 
+
+#End of focuses 
+ }

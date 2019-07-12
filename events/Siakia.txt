@@ -1,0 +1,61 @@
+add_namespace = siakia
+# Coup
+country_event = {
+	id = siakia.5
+	title = siakia.5.t
+	desc = siakia.5.d
+	picture = "gfx/event_pictures_report_event_ger_civil_war.dds"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = XIA
+		has_completed_focus = XIA_coup
+}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = siakia.5.a
+		set_country_flag = XIA_left_coup
+		create_country_leader = {
+			name = "Panland Council"
+			desc = "POLITICS_PANLAND_DESC"
+			picture = "gfx/leaders/Portrait_XIA_PanlandCouncil.dds"
+			expire = "2035.1.1"
+			ideology = socialism
+			traits = {
+				permanent_revolutionary
+			}
+		}
+		set_politics = {
+			ruling_party = socialism
+			elections_allowed = yes
+		}
+		start_civil_war = {
+			ideology = liberalism
+			size = 0.18
+		}
+		add_ideas= {
+		XIA_coalition
+		elections_al }
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = XIA
+					has_government = liberalism
+				}
+				create_country_leader = {
+					name = "Borx Honmarenko"
+					desc = "POLITICS_IVAN_KONEV_DESC"
+					picture = "gfx/leaders/Portrait_SLA_Suslov.dds"
+					expire = "2035.1.1"
+					ideology = liberalism
+					traits = {
+					}
+				}
+			}
+			news_event = { hours = 6 id = news.2 }
+		}
+	}
+}

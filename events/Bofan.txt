@@ -1,0 +1,30 @@
+add_namespace = bofan
+
+country_event = {
+	id = bofan.1
+	title = bofan.1.t
+	desc = bofan.1.d
+	picture = "gfx/event_pictures_report_event_ger_civil_war.dds"
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BOF
+	date > 2014.9.2
+		NOT = { has_global_flag = ideo_crisis }
+	mean_time_to_happen = {
+		days = 2
+	}
+}
+	immediate = {
+		set_global_flag = ideo_crisis
+	}
+	option = {
+		name = bofan.1.a
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
+		news_event = { hours = 6 id = news.1 }
+		}
+	}
