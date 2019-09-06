@@ -1,9 +1,9 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
-		date = 2014.9.1.8
-		picture = "GFX_select_date_1936"
+		name = "SAS_NAME"
+		desc = "SAS_STORM_DESC"
+		date = 2014.1.1.8
+		picture = "GFX_select_date_1939"
 		default_country = "MIR"
 		default = yes
 		
