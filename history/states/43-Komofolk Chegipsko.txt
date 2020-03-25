@@ -4,6 +4,17 @@ state={
 	provinces={
 		5237 
 	}
-	manpower=0
+	history={
+		owner = CEG
+		add_core_of = CEG
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			5237 5
+		}
+	}
+	manpower=980721
 	buildings_max_level_factor=1.000
+	state_category=rural
 }

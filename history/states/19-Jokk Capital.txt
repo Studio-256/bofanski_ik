@@ -4,6 +4,19 @@ state={
 	provinces={
 		346 2066 2513 4381 6439 6445 6460 
 	}
-	manpower=0
+	history={
+		owner = JOK
+		add_core_of = JOK
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			4381 5
+		}
+	}
+	manpower=1730698
 	buildings_max_level_factor=1.000
+	state_category = town
 }

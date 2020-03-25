@@ -4,6 +4,19 @@ state={
 	provinces={
 		11523 
 	}
-	manpower=0
+	history={
+		owner = ZOK
+		add_core_of = ZOK
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			11523 15
+		}
+	}
+	manpower=1890215
 	buildings_max_level_factor=1.000
+	state_category = town
 }

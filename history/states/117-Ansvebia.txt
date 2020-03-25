@@ -4,6 +4,19 @@ state={
 	provinces={
 		505 726 855 932 1387 1844 1928 2236 2347 3276 3608 3708 3954 4140 4198 4228 4338 4969 5023 5185 5302 5834 7636 7666 7698 7754 7775 7826 7908 7983 7999 8034 8118 8162 8181 8236 8266 8295 8296 8308 8323 8331 8341 8388 8425 8452 8471 8503 8522 8533 
 	}
-	manpower=0
+	history={
+		owner = ANS
+		add_core_of = ANS
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			8331 10
+		}
+	}
+	manpower=5133090
 	buildings_max_level_factor=1.000
+	state_category = city
 }

@@ -5,6 +5,19 @@ state={
 	provinces={
 		296 403 1461 2212 2602 2671 3368 3754 4834 6416 6422 6438 6441 
 	}
-	manpower=0
+	history={
+		owner = CLP
+		add_core_of = CLP
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+		}
+		victory_points = {
+			296 10
+		}
+	}
+	manpower=7072653
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

@@ -22,29 +22,17 @@ set_technology = {
 set_research_slots = 3
 
 set_politics = {
-
-	parties = {
-		liberalism = { 
-			popularity = 65
-		}
-
-		socialism = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		egoism = {
-			popularity = 10
-		}
-	}
-	
 	ruling_party = liberalism
 	last_election = "2014.8.31"
-	election_frequency = 72
+	election_frequency = 84
 	elections_allowed = yes
+}
+
+set_popularities = {
+	liberalism = 65
+	socialism = 20
+	fascism = 5	
+	egoism = 10
 }
 
 add_ideas = {
@@ -56,7 +44,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Liubomir Szudakef"
 	desc = "POLITICS_EDVARD_BENES_DESC"
-	picture = "Portrait_Czech_Edvard_Benes.dds"
+	picture = "gfx/leaders/Portrait_SLA_Governor.dds"
 	expire = "2029.1.1"
 	ideology = liberalism
 	traits = {

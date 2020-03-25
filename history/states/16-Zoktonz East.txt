@@ -4,6 +4,15 @@ state={
 	provinces={
 		1542 2071 2852 3881 4142 4632 6471 
 	}
-	manpower=0
+	history={
+		owner = ZOK
+		add_core_of = ZOK
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+	}
+	manpower=2809109
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

@@ -4,6 +4,16 @@ state={
 	provinces={
 		1843 6872 
 	}
-	manpower=0
+	history={
+		owner = SVI
+		add_core_of = SVI
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+	manpower=1203582
 	buildings_max_level_factor=1.000
+	state_category = town
 }

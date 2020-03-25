@@ -19,13 +19,6 @@ set_technology = {
 
 
 set_politics = {
-
-	parties = {
-		socdem = { 
-			popularity = 100
-		}
-
-	}
 	
 	ruling_party = socdem
 	last_election = "2011.10.14"
@@ -33,6 +26,9 @@ set_politics = {
 	elections_allowed = yes
 }
 
+set_popularities = {
+	socdem = 100
+}
 
 add_ideas = {
 	elections_al

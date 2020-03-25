@@ -38,39 +38,57 @@ set_convoys = 400
 
 set_politics = {
 
-	parties = {
-		liberalism = { 
-			popularity = 26
-		}
-		conservatism = { 
-			popularity = 26
-		}
-		autocracy = {
-			popularity = 26
-		}
-		fascism = {
-			popularity = 3
-		}
-		egoism = {
-			popularity = 8
-		}
-		socialism = {
-			popularity = 11
-			#banned = no #default is no
-		}
-	}
-		
+	
 	ruling_party = liberalism
 	last_election = "2014.8.31"
-	election_frequency = 72
+	election_frequency = 84
 	elections_allowed = yes
 	
 }
+
+set_popularities = {
+	liberalism = 26
+	conservatism = 26
+	autocracy = 26
+	fascism = 3
+	egoism = 8
+	socialism = 11
+}
+
 create_faction = BofanColonial
 add_to_faction = XIA
 add_to_faction = SAS
 add_to_faction = SLA
 add_to_faction = PIN
+add_to_faction = ELO
+add_to_faction = REM
+add_to_faction = RIN
+add_to_faction = ANS
+add_to_faction = POD
+add_to_faction = TRS
+add_to_faction = BBL
+add_to_faction = DOK
+add_to_faction = VEL
+add_to_faction = JOK
+add_to_faction = ZOK
+add_to_faction = SHT
+add_to_faction = KOM
+add_to_faction = SBI
+add_to_faction = KRA
+add_to_faction = RON
+add_to_faction = VEG
+add_to_faction = PUV
+add_to_faction = REK
+add_to_faction = STR
+add_to_faction = CLP
+add_to_faction = MLY
+add_to_faction = MLM
+add_to_faction = CEG
+add_to_faction = ARV
+add_to_faction = ERM
+add_to_faction = NRM
+add_to_faction = TAR
+add_to_faction = SVI
 
 add_ideas = {
 	elections_al
@@ -100,8 +118,156 @@ set_autonomy = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.2
 	}
-
-
+set_autonomy = {
+		target = ELO
+		autonomous_state = autonomy_colony
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = REM
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = RIN
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.5
+	}
+set_autonomy = {
+		target = ANS
+		autonomous_state = autonomy_colony
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = POD
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = TRS
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = BBL
+		autonomous_state = autonomy_colony
+		freedom_level = 0.7
+	}
+set_autonomy = {
+		target = DOK
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = VEL
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.6
+	}
+set_autonomy = {
+		target = JOK
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.4
+	}
+set_autonomy = {
+		target = ZOK
+		autonomous_state = autonomy_colony
+		freedom_level = 0.75
+	}
+set_autonomy = {
+		target = SHT
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.3
+	}
+set_autonomy = {
+		target = KOM
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.6
+	}
+set_autonomy = {
+		target = SBI
+		autonomous_state = autonomy_colony
+		freedom_level = 0.85
+	}
+set_autonomy = {
+		target = KRA
+		autonomous_state = autonomy_colony
+		freedom_level = 0.8
+	}
+set_autonomy = {
+		target = NON
+		autonomous_state = autonomy_colony
+		freedom_level = 0.85
+	}
+set_autonomy = {
+		target = RON
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = VEG
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.85
+	}
+set_autonomy = {
+		target = PUV
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = REK
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}	
+set_autonomy = {
+		target = STR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = CLP
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = MLY
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = MLM
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = CEG
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = ARV
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.2
+	}
+set_autonomy = {
+		target = ERM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.5
+	}
+set_autonomy = {
+		target = NRM
+		autonomous_state = autonomy_colony
+		freedom_level = 0.25
+	}
+set_autonomy = {
+		target = TAR
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.3
+	}
+set_autonomy = {
+		target = SVI
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.5
+	}
 
 create_country_leader = {
 	name = "Executive Monopoly"

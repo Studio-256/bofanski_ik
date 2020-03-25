@@ -4,6 +4,22 @@ state={
 	provinces={
 		83 253 984 1486 6613 6655 6663 6686 
 	}
-	manpower=0
+	history={
+		owner = KOM
+		add_core_of = KOM
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 4
+		}
+		victory_points = {
+			83 10
+		}
+		victory_points = {
+			253 50
+		}
+	}
+	manpower=7566029
 	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

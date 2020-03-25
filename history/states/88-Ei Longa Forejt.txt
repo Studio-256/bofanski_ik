@@ -4,6 +4,20 @@ state={
 	provinces={
 		232 6869 6875 6907 
 	}
-	manpower=0
+	history={
+		owner = ELO
+		add_core_of = ELO
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			232 15 
+		}
+
+	}
+	manpower=1103921
 	buildings_max_level_factor=1.000
+	state_category=city
 }

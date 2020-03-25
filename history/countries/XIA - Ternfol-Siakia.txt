@@ -78,32 +78,20 @@ set_stability = 0.75
 
 
 set_politics = {
-
-	parties = {
-		socialism = { 
-			popularity = 30
-		}
-		autocracy = {
-			popularity = 5
-		}
-
-		leftmilitarism = {
-			popularity = 5
-		}
-		
-		liberalism = {
-			popularity = 60
-			banned = no #default is no
-		}
-	}
 	
 	ruling_party = liberalism
 	last_election = "2014.8.31"
-	election_frequency = 72
+	election_frequency = 84
 	elections_allowed = yes
 
 }
 
+set_popularities = {
+	liberalism = 60
+	socialism = 30
+	autocracy = 5
+	leftmilitarism = 5
+}
 
 add_ideas = {
 	elections_al
@@ -114,7 +102,7 @@ add_ideas = {
 create_country_leader = {
 	name = "Josef Rohlik"
 	desc = "POLITICS_ROHLIK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	picture = "gfx/leaders/Portrait_XIA_Governor.dds"
 	expire = "2019.3.1"
 	ideology = liberalism
 	traits = {
@@ -125,7 +113,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Nikolai Samov"
 	desc = "POLITICS_WILHELM_PIECK_DESC"	 
-	picture = "gfx/leaders/GER/Portrait_Germany_Wilhelm_Pieck.dds"
+	picture = "gfx/leaders/Portrait_XIA_Samov.dds"
 	expire = "2032.1.1"
 	ideology = leftmilitarism
 	traits = {
@@ -146,7 +134,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Augusta Sikorska"
 	desc = "POLITICS_AUGUSTA_SIKORSKA_DESC"	 
-	picture = "gfx/leaders/Portrait_Argentina_Fanny_Jabcovsky.dds"
+	picture = "gfx/leaders/Portrait_XIA_Sikorska.dds"
 	expire = "2032.1.1"
 	ideology = socialdemocracy
 	traits = {

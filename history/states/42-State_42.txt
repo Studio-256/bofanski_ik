@@ -4,6 +4,14 @@ state={
 	provinces={
 		284 6521 
 	}
-	manpower=0
+	history={
+		owner = PUV
+		add_core_of = PUV
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=713130
 	buildings_max_level_factor=1.000
+	state_category=island
 }

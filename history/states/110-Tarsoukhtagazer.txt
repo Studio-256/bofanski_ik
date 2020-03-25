@@ -4,6 +4,19 @@ state={
 	provinces={
 		357 610 644 787 893 930 1270 1285 1338 2175 2364 2687 2959 2976 3233 3288 3294 3340 3589 3723 4512 4635 4647 4695 4871 5137 5267 5818 5922 5933 6356 7272 7310 7365 7390 7458 7519 7575 7588 7610 7643 7676 7697 7740 7782 7804 7883 7992 8033 8055 8083 8112 8155 8219 8249 
 	}
-	manpower=0
+	history={
+		owner = TRS
+		add_core_of = TRS
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			2959 3
+		}
+	}
+	manpower=2301300
 	buildings_max_level_factor=1.000
+	state_category = town
 }

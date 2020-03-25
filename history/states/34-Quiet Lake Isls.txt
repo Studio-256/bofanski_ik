@@ -5,6 +5,15 @@ state={
 	provinces={
 		1656 11524 
 	}
-	manpower=0
+	history={
+		owner = JOK
+		add_core_of = JOK
+		buildings = {
+			infrastructure = 0
+
+		}
+	}
+	manpower=42098
 	buildings_max_level_factor=1.000
+	state_category = pastoral
 }

@@ -5,6 +5,19 @@ state={
 	provinces={
 		428 1884 1897 1898 2693 2795 4059 4586 5334 5439 6022 6577 6623 
 	}
-	manpower=0
+	history={
+		owner = VEL
+		add_core_of = VEL
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			6577 5
+		}
+	}
+	manpower=3609739
 	buildings_max_level_factor=1.000
+	state_category = city
 }

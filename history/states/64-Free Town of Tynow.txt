@@ -4,6 +4,17 @@ state={
 	provinces={
 		1159 
 	}
-	manpower=0
+	history={
+		owner = TAR
+		add_core_of = TAR
+		buildings = {
+			infrastructure = 8
+		}
+		victory_points = {
+			1159 5
+		}
+	}
+	manpower=342000
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

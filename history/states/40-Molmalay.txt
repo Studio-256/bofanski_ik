@@ -4,6 +4,19 @@ state={
 	provinces={
 		931 1274 2127 4459 6520 
 	}
-	manpower=0
+	history={
+		owner = MLM
+		add_core_of = MLM
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			931 3
+		}
+	}
+	manpower=901030
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

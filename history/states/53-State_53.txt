@@ -4,6 +4,16 @@ state={
 	provinces={
 		735 1893 
 	}
-	manpower=0
+	history={
+		owner = REK
+		add_core_of = REK
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+
+	}
+	manpower=711299
 	buildings_max_level_factor=1.000
+	state_category=large_town
 }

@@ -38,6 +38,40 @@ bookmarks = {
 				
 			}	
 		}
+		
+		"SAS"={
+			history = "SAS_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		
+		"SLA"={
+			history = "SLA_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"PIN"={
+			history = "PIN_GATHERING_STORM_DESC"
+			ideology = liberalism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		
+		
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"

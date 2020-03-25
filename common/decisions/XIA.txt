@@ -1,4 +1,4 @@
-communism_on_the_rise = {
+left_rise_category = {
 	meeting = {
 
     	icon = generic_civil_support
@@ -10,7 +10,6 @@ communism_on_the_rise = {
 		}
 
 		available = {
-            socialism > 0.1
 			is_subject = yes
 			has_completed_focus = XIA_parliament_meetings
 			XIA = { has_government = liberalism }
@@ -36,4 +35,6 @@ communism_on_the_rise = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+
 }

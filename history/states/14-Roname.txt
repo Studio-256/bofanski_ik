@@ -4,6 +4,19 @@ state={
 	provinces={
 		948 1472 1962 2093 3317 4335 5754 
 	}
-	manpower=0
+	history={
+		owner = RON
+		add_core_of = RON
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			3317 5
+		}
+	}
+	manpower=5352010
 	buildings_max_level_factor=1.000
+	state_category=large_town
 }

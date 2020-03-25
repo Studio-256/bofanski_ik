@@ -1,0 +1,17 @@
+state={
+	id=74
+	name="STATE_74"
+	provinces={
+		11528 
+	}
+	history={
+		owner = KOM
+		add_core_of = KOM
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=2104
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

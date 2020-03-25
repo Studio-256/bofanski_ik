@@ -4,6 +4,19 @@ state={
 	provinces={
 		242 511 1277 1314 1562 1815 1887 2051 2444 2918 3121 3164 3343 3646 4052 4394 4886 4888 4954 5767 5816 5935 6063 6859 6904 6943 7027 7033 7056 7091 7127 7142 7159 
 	}
-	manpower=0
+	history={
+		owner = TAR
+		add_core_of = TAR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+		}
+		victory_points = {
+			7033 10
+		}
+	}
+	manpower=6310400
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

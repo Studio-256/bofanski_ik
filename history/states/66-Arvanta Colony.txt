@@ -1,0 +1,17 @@
+state={
+	id=66
+	name="STATE_66"
+	provinces={
+		 822 2398 2491 6974 
+	}
+	history={
+		owner = ARV
+		add_core_of = ARV
+		buildings = {
+			infrastructure = 5
+		}
+	}
+	manpower=530220
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

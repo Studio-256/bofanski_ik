@@ -4,6 +4,19 @@ state={
 	provinces={
 		269 648 3087 4725 6502 6530 
 	}
-	manpower=0
+	history={
+		owner = MLY
+		add_core_of = MLY
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			269 3
+		}
+	}
+	manpower=2301000
 	buildings_max_level_factor=1.000
+	state_category = town
 }

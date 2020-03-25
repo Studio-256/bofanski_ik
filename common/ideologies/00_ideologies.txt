@@ -261,7 +261,7 @@ ideologies = {
 			
 		}
 	}
-autocracy = {
+	autocracy = {
 	
 		types = {
 		
@@ -295,7 +295,7 @@ autocracy = {
 
 		ai_fascist = yes # uses the fascist AI behaviour
 	}	
-leftmilitarism = {
+	leftmilitarism = {
 		
 		types = {
 		
@@ -334,7 +334,7 @@ leftmilitarism = {
 		}
 
 	}
-egoism = {
+	egoism = {
 	
 		types = {
 			

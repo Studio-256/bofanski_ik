@@ -4,6 +4,16 @@ state={
 	provinces={
 		1993 6528 6560 
 	}
-	manpower=0
+	history={
+		owner = JOK
+		add_core_of = JOK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+
+	}
+	manpower=601809
 	buildings_max_level_factor=1.000
+	state_category = rural
 }

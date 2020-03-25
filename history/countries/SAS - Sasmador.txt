@@ -20,22 +20,16 @@ set_technology = {
 
 
 set_politics = {
-	parties = {
-		socialism = { 
-			popularity = 25
-		}
-		autocracy = {
-			popularity = 31
-		}
-		liberalism = {
-			popularity = 44
-		}
-	}
-	
 	ruling_party = liberalism
 	last_election = "2014.8.31"
-	election_frequency = 72
+	election_frequency = 84
 	elections_allowed = yes
+}
+
+set_popularities = {
+	socialism =  25
+	autocracy = 31
+	liberalism = 44
 }
 
 add_ideas = {
@@ -47,9 +41,9 @@ add_ideas = {
 #Start Horty as neutral if DOD
 
 create_country_leader = {
-	name = "General Governor Name"
+	name = "Stoian Zadobrev"
 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
-	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
+	picture = "gfx/leaders/Portrait_SAS_Governor.dds"
 	expire = "2022.1.1"
 	ideology = liberalism
 	traits = {
@@ -60,7 +54,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Asen Gochev"
 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	picture = "gfx/leaders/Portrait_SAS_generic_socialist_Georgiu_Dej.dds"
 	expire = "2040.1.1"
 	ideology = socialism
 	traits = {

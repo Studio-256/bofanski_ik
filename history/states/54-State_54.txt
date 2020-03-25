@@ -4,6 +4,15 @@ state={
 	provinces={
 		4944 
 	}
-	manpower=0
+	history={
+		owner = REK
+		add_core_of = REK
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+	manpower=365402
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

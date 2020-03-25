@@ -15,29 +15,17 @@ set_convoys = 10
 
 
 set_politics = {
-
-	parties = {
-		autocracy = { 
-			popularity = 30
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		socialism = {
-			popularity = 10
-		}
-		
-		liberalism = { 
-			popularity = 50
-		}
-	}
-	
 	ruling_party = liberalism
 	last_election = "2014.8.31"
-	election_frequency = 72
+	election_frequency = 84
 	elections_allowed = yes
+}
+
+set_popularities = {
+	autocracy = 30
+	fascism = 10	
+	socialism = 10	
+	liberalism = 50
 }
 
 add_ideas = {

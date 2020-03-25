@@ -4,6 +4,19 @@ state={
 	provinces={
 		163 237 333 784 1192 1431 1450 1487 1836 1942 2202 2267 3257 4107 4646 4727 5110 5183 6670 6707 6728 6750 6783 6795 6821 6890 
 	}
-	manpower=0
+	history={
+		owner = SBI
+		add_core_of = SBI
+		buildings = {
+			infrastructure = 7
+			arms_factory = 4
+			industrial_complex = 4
+		}
+		victory_points = {
+			4646 10
+		}
+	}
+	manpower=9841023
 	buildings_max_level_factor=1.000
+	state_category=large_city
 }

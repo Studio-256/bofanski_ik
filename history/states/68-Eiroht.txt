@@ -4,6 +4,19 @@ state={
 	provinces={
 		436 
 	}
-	manpower=0
+	history={
+		owner = REM
+		add_core_of = REM
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		victory_points = {
+			436 15 
+		}
+
+	}
+	manpower=1120438
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

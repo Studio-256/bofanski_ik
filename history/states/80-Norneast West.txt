@@ -4,6 +4,23 @@ state={
 	provinces={
 		283 1000 1173 1813 1829 1886 1917 1951 1974 3774 4812 4881 5125 5847 6030 6130 6855 6893 6928 6940 6953 7020 7086 
 	}
-	manpower=0
+	history={
+		owner = NON
+		add_core_of = NON
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+			7154 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			1917 10
+		}
+
+	}
+	manpower=2941023
 	buildings_max_level_factor=1.000
+	state_category=large_town
 }

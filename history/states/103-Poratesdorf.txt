@@ -4,6 +4,19 @@ state={
 	provinces={
 		177 498 553 573 836 1121 1315 1319 1369 1658 1849 2044 2320 2343 2698 3223 3559 3606 3637 3728 3877 3980 4035 4319 4398 4506 4513 4570 4588 4612 5134 5226 6009 6052 6169 7067 7078 7222 7223 7267 7389 7437 7710 7720 7721 7795 7811 7812 7869 7882 8032 8125 8187 8265 8271 8322 
 	}
-	manpower=0
+	history={
+		owner = POD
+		add_core_of = POD
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			7811 5
+		}
+	}
+	manpower=4743010
 	buildings_max_level_factor=1.000
+	state_category = town
 }

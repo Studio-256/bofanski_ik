@@ -36,7 +36,7 @@ categories =  {
 			#movement = -0.2
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.1
+		enemy_army_bonus_air_superiority_factor = -0.15
 	}
 
 	hills = {
@@ -87,7 +87,7 @@ categories =  {
 		sound_type = plains
 
 		units = {
-			attack = -0.3
+			attack = -0.5
 			#movement = -0.2
 		}
 
@@ -108,7 +108,7 @@ categories =  {
 			#movement = -0.3
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.25
+		enemy_army_bonus_air_superiority_factor = -0.3
 		
 		sickness_chance = 1.0
 	}	
@@ -128,6 +128,7 @@ categories =  {
 		}
 		
 		sickness_chance = 1.0
+		enemy_army_bonus_air_superiority_factor = -0.05
 	}
 	
 	desert = {
