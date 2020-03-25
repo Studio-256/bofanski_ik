@@ -13,7 +13,7 @@ history={
 			industrial_complex = 2
 		}
 		victory_points = {
-			816 5
+			308 5
 		}
 	}
 	manpower=4923022
